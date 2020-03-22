@@ -1,0 +1,6 @@
+<button id="mobile-menu-button" (click)="opened = !opened">MENU</button>
+
+<div id="mobile-menu-container" [class]="opened ? 'opened' : ''">
+    <app-main-menu></app-main-menu>
+    <app-social-menu></app-social-menu>
+</div>

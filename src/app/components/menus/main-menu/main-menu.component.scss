@@ -1,0 +1,54 @@
+:host {
+  display: flex;
+  justify-content: center;
+
+  nav.main-menu {
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 0 20px;
+      text-decoration: none;
+      transition: 0.5s;
+
+      span {
+        padding-top: 1px;
+
+        &::after {
+          content: "";
+          display: block;
+          border: solid transparent 1px;
+          width: 0%;
+          transition: 0.3s;
+        }
+      }
+
+      &:hover span::after {
+        border: solid black 1px;
+        width: 100%;
+      }
+
+      &.active {
+        background-color: lightgray;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  :host {
+    width: 100%;
+
+    nav.main-menu {
+      flex-flow: column;
+      width: inherit;
+
+      a {
+        width: inherit;
+        height: auto;
+        padding: 20px;
+      }
+    }
+  }
+}

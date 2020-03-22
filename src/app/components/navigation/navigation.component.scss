@@ -1,0 +1,38 @@
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+  min-height: 70px;
+  background-color: whitesmoke;
+
+  h1 {
+    display: inline-flex;
+    align-self: center;
+    margin: 0;
+  }
+
+  app-mobile-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  header {
+    flex-flow: column;
+
+    h1 {
+      padding: 10px 0;
+    }
+
+    app-main-menu,
+    app-social-menu {
+      display: none;
+    }
+
+    app-mobile-menu {
+      display: block;
+    }
+  }
+}
