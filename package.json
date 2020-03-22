@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-pages": "ng build --prod --output-path docs --base-href https://adrianocucci.github.io/Julz --deployUrl /Julz/"
+    "build-pages": "ng build --prod --output-path docs --base-href https://adrianocucci.github.io/Julz"
   },
   "private": true,
   "dependencies": {
