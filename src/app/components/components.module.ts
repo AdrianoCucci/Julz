@@ -6,6 +6,7 @@ import { SocialMenuComponent } from './menus/social-menu/social-menu.component';
 import { MobileMenuComponent } from './menus/mobile-menu/mobile-menu.component';
 import { RowComponent } from './layout/row/row.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { ColumnComponent } from './layout/column/column.component';
 
 const components = [
   NavigationComponent,
@@ -13,6 +14,7 @@ const components = [
   SocialMenuComponent,
   MobileMenuComponent,
   RowComponent,
+  ColumnComponent
 ];
 
 @NgModule({

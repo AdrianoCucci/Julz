@@ -1,0 +1,26 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+  &[arrange="mid"] {
+    justify-content: center;
+  }
+
+  &[arrange="low"] {
+    justify-content: flex-end;
+  }
+
+  &[size="s"] {
+    flex: 0.5;
+  }
+
+  &[size="l"] {
+    flex: 1.5;
+  }
+
+  &[size="xl"] {
+    flex: 2;
+  }
+}

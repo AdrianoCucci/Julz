@@ -1,0 +1,15 @@
+:host {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+
+  &[full-width] ::ng-deep app-column {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  :host {
+    flex-flow: column;
+  }
+}
