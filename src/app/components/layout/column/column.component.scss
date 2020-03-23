@@ -1,15 +1,14 @@
 :host {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   flex: 1;
 
   &[align-h="center"] {
-    align-items: center;
+    justify-content: center;
   }
 
   &[align-h="right"] {
-    align-items: flex-end;
+    justify-content: flex-end;
   }
 
   &[align-v="center"] {

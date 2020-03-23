@@ -1,13 +1,32 @@
-:host {
-  display: flex;
-  justify-content: center;
+@mixin stacked() {
+  width: 100%;
 
   nav.main-menu {
+    flex-flow: column;
+
+    a {
+      height: auto;
+      padding: 15px 20px;
+    }
+  }
+}
+
+:host {
+  display: block;
+
+  nav.main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    height: 100%;
+
     a {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      height: 100%;
+      width: inherit;
+      height: inherit;
       padding: 0 20px;
       text-decoration: none;
       transition: 0.5s;
@@ -34,21 +53,14 @@
       }
     }
   }
+
+  &[stacked] {
+    @include stacked();
+  }
 }
 
 @media only screen and (max-width: 1000px) {
   :host {
-    width: 100%;
-
-    nav.main-menu {
-      flex-flow: column;
-      width: inherit;
-
-      a {
-        width: inherit;
-        height: auto;
-        padding: 20px;
-      }
-    }
+    @include stacked();
   }
 }

@@ -9,9 +9,11 @@ import { AppRoutingModule } from '../app-routing.module';
 import { ColumnComponent } from './layout/column/column.component';
 import { ImageViewComponent } from './images/image-view/image-view.component';
 import { ImageModalComponent } from './images/image-modal/image-modal.component';
+import { FooterComponent } from './footer/footer.component';
 
 const components = [
   NavigationComponent,
+  FooterComponent,
   MainMenuComponent,
   SocialMenuComponent,
   MobileMenuComponent,

@@ -6,12 +6,14 @@ import { BiographyPage } from './biography/biography.page';
 import { GalleryPage } from './gallery/gallery.page';
 import { ComponentsModule } from '../components/components.module';
 import { HttpClientModule } from '@angular/common/http';
+import { PageNotFoundPage } from './page-not-found/page-not-found.page';
 
 const pages = [
   HomePage,
   MusicPage,
   BiographyPage,
-  GalleryPage
+  GalleryPage,
+  PageNotFoundPage
 ];
 
 @NgModule({
