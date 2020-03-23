@@ -1,6 +1,7 @@
 :host {
   display: flex;
   flex-flow: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 
   &[full-width] ::ng-deep app-column {

@@ -7,6 +7,8 @@ import { MobileMenuComponent } from './menus/mobile-menu/mobile-menu.component';
 import { RowComponent } from './layout/row/row.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { ColumnComponent } from './layout/column/column.component';
+import { ImageViewComponent } from './images/image-view/image-view.component';
+import { ImageModalComponent } from './images/image-modal/image-modal.component';
 
 const components = [
   NavigationComponent,
@@ -14,7 +16,9 @@ const components = [
   SocialMenuComponent,
   MobileMenuComponent,
   RowComponent,
-  ColumnComponent
+  ColumnComponent,
+  ImageViewComponent,
+  ImageModalComponent
 ];
 
 @NgModule({

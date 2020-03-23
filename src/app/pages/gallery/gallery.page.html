@@ -1,1 +1,9 @@
 <h1>GALLERY PAGE</h1>
+
+<app-row *ngFor="let row of gallaryRows">
+    <app-column *ngFor="let image of row.images" align-h="center" align-v="center">
+        <app-image-view [src]="image.src" [alt]="image.alt" (onClick)="imageModal.show($event)"></app-image-view>
+    </app-column>
+</app-row>
+
+<app-image-modal></app-image-modal>

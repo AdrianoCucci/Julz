@@ -1,15 +1,27 @@
 :host {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   flex: 1;
 
-  &[arrange="mid"] {
+  &[align-h="center"] {
+    align-items: center;
+  }
+
+  &[align-h="right"] {
+    align-items: flex-end;
+  }
+
+  &[align-v="center"] {
     justify-content: center;
   }
 
-  &[arrange="low"] {
+  &[align-v="bottom"] {
     justify-content: flex-end;
+  }
+
+  &[size="xs"] {
+    flex: 0.25;
   }
 
   &[size="s"] {
@@ -22,5 +34,9 @@
 
   &[size="xl"] {
     flex: 2;
+  }
+
+  &[size="xxl"] {
+    flex: 2.5;
   }
 }

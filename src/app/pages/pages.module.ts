@@ -5,6 +5,7 @@ import { MusicPage } from './music/music.page';
 import { BiographyPage } from './biography/biography.page';
 import { GalleryPage } from './gallery/gallery.page';
 import { ComponentsModule } from '../components/components.module';
+import { HttpClientModule } from '@angular/common/http';
 
 const pages = [
   HomePage,
@@ -16,7 +17,8 @@ const pages = [
 @NgModule({
   imports: [
     CommonModule,
-    ComponentsModule
+    ComponentsModule,
+    HttpClientModule
   ],
   declarations: pages,
   exports: pages,
