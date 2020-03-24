@@ -7,6 +7,10 @@ body {
   box-sizing: border-box;
 }
 
+.hidden {
+  display: none;
+}
+
 @mixin page-style() {
   display: block;
   padding: 50px 5% 25px 5%;

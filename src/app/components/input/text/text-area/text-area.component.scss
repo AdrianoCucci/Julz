@@ -1,0 +1,10 @@
+@import "../text-input.scss";
+
+:host {
+  @include textInputStyle();
+
+  textarea {
+    min-height: 200px;
+    resize: none;
+  }
+}

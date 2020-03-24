@@ -1,0 +1,27 @@
+@import "../input.scss";
+
+@mixin textInputStyle() {
+  @include inputStyle();
+  min-width: 300px;
+
+  label {
+    display: inline-block;
+    margin-left: 12px;
+    margin-bottom: 8px;
+    color: gray;
+    font-size: 1.3rem;
+    transform: translateY(40px) scale(0.8);
+    transform-origin: left;
+    transition: 0.25s;
+  }
+
+  input,
+  textarea {
+    display: block;
+  }
+
+  &.raised-label label {
+    color: white;
+    transform: translateY(0) scale(1);
+  }
+}

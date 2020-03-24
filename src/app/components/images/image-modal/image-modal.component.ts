@@ -1,4 +1,4 @@
-import { Component, HostBinding, OnInit, AfterViewInit, HostListener } from '@angular/core';
+import { Component, HostBinding, HostListener } from '@angular/core';
 import { ImageComponent } from '../image-component';
 import { ImageReference } from 'src/app/interfaces/image-reference';
 
@@ -8,17 +8,17 @@ import { ImageReference } from 'src/app/interfaces/image-reference';
   styleUrls: ['./image-modal.component.scss']
 })
 export class ImageModalComponent extends ImageComponent {
-  @HostBinding("class") private _class: string;
+  @HostBinding("class.visible") private _visible: boolean;
 
   public show(imageReference?: ImageReference) {
     if(imageReference) {
       this.src = imageReference.src;
       this.alt = imageReference.alt;
     }
-    this._class = "visible";
+    this._visible = true;
   }
 
   @HostListener("click") public hide() {
-    this._class = "";
+    this._visible = false;
   }
 }

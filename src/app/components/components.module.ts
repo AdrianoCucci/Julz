@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
 import { NavigationComponent } from './navigation/navigation.component';
 import { MainMenuComponent } from './menus/main-menu/main-menu.component';
 import { SocialMenuComponent } from './menus/social-menu/social-menu.component';
@@ -10,6 +12,10 @@ import { ColumnComponent } from './layout/column/column.component';
 import { ImageViewComponent } from './images/image-view/image-view.component';
 import { ImageModalComponent } from './images/image-modal/image-modal.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { TextInputComponent } from './input/text/text-input/text-input.component';
+import { TextAreaComponent } from './input/text/text-area/text-area.component';
+import { ButtonComponent } from './input/button/button.component';
 
 const components = [
   NavigationComponent,
@@ -20,13 +26,18 @@ const components = [
   RowComponent,
   ColumnComponent,
   ImageViewComponent,
-  ImageModalComponent
+  ImageModalComponent,
+  ContactFormComponent,
+  TextInputComponent,
+  TextAreaComponent,
+  ButtonComponent
 ];
 
 @NgModule({
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   declarations: components,
   exports: components,

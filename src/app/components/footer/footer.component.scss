@@ -3,6 +3,11 @@
 
   footer {
     width: 100%;
-    background-color: gray;
+    background-color: #444444;
+
+    app-contact-form {
+      width: 100%;
+      padding: 25px 10%;
+    }
   }
 }

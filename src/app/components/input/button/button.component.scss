@@ -1,0 +1,9 @@
+@import "../input.scss";
+
+:host {
+  @include inputStyle();
+
+  button {
+    cursor: pointer;
+  }
+}

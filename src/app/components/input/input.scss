@@ -1,0 +1,57 @@
+@mixin inputStyle() {
+  display: inline-block;
+  margin: 20px 0;
+
+  input,
+  textarea,
+  button {
+    display: inherit;
+    padding: 10px;
+    border: none;
+    border: solid transparent 2px;
+    outline: none;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: 0.25s;
+  }
+
+  &:hover {
+    input,
+    textarea,
+    button {
+      box-shadow: inset black 0 0 5px;
+    }
+  }
+
+  &.block {
+    display: block;
+
+    input,
+    textarea,
+    button {
+      width: 100%;
+    }
+  }
+
+  &.rounded {
+    input,
+    textarea,
+    button {
+      border-radius: 20px;
+    }
+  }
+
+  &.outlined {
+    input,
+    textarea,
+    button {
+      background: none;
+      border: solid white 2px;
+      color: white;
+
+      &:hover {
+        box-shadow: inset white 0 0 5px;
+      }
+    }
+  }
+}
