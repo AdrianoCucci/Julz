@@ -1,4 +1,4 @@
-import { Component, Input, EventEmitter } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { AppInput } from '../input';
 
 @Component({
@@ -9,10 +9,7 @@ import { AppInput } from '../input';
 export class ButtonComponent extends AppInput {
   @Input() public text: string;
 
-  public readonly onClick: EventEmitter<void>;
-
   public constructor() {
     super("button");
-    this.onClick = new EventEmitter();
   }
 }

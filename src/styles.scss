@@ -1,70 +1,67 @@
 :root {
-  --ion-color-primary: #047fe5;
-  --ion-color-primary-rgb: 4, 127, 229;
-  --ion-color-primary-contrast: #ffffff;
-  --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #0470ca;
-  --ion-color-primary-tint: #1d8ce8;
+  --color-primary: #047fe5;
+  --color-primary-rgb: 4, 127, 229;
+  --color-primary-contrast: #ffffff;
+  --color-primary-contrast-rgb: 255, 255, 255;
+  --color-primary-shade: #0470ca;
+  --color-primary-tint: #1d8ce8;
 
-  --ion-color-secondary: #ffffff;
-  --ion-color-secondary-rgb: 15, 255, 255;
-  --ion-color-secondary-contrast: #000000;
-  --ion-color-secondary-contrast-rgb: 0, 0, 0;
-  --ion-color-secondary-shade: #0de0e0;
-  --ion-color-secondary-tint: #27ffff;
+  --color-secondary: #ffffff;
+  --color-secondary-rgb: 15, 255, 255;
+  --color-secondary-contrast: #000000;
+  --color-secondary-contrast-rgb: 0, 0, 0;
+  --color-secondary-shade: #0de0e0;
+  --color-secondary-tint: #27ffff;
 
-  --ion-color-tertiary: #ff7e00;
-  --ion-color-tertiary-rgb: 255, 126, 0;
-  --ion-color-tertiary-contrast: #000000;
-  --ion-color-tertiary-contrast-rgb: 0, 0, 0;
-  --ion-color-tertiary-shade: #e06f00;
-  --ion-color-tertiary-tint: #ff8b1a;
+  --color-tertiary: #ff7e00;
+  --color-tertiary-rgb: 255, 126, 0;
+  --color-tertiary-contrast: #000000;
+  --color-tertiary-contrast-rgb: 0, 0, 0;
+  --color-tertiary-shade: #e06f00;
+  --color-tertiary-tint: #ff8b1a;
 
-  --ion-color-success: #10dc60;
-  --ion-color-success-rgb: 16, 220, 96;
-  --ion-color-success-contrast: #ffffff;
-  --ion-color-success-contrast-rgb: 255, 255, 255;
-  --ion-color-success-shade: #0ec254;
-  --ion-color-success-tint: #28e070;
+  --color-success: #10dc60;
+  --color-success-rgb: 16, 220, 96;
+  --color-success-contrast: #ffffff;
+  --color-success-contrast-rgb: 255, 255, 255;
+  --color-success-shade: #0ec254;
+  --color-success-tint: #28e070;
 
-  --ion-color-warning: #ffce00;
-  --ion-color-warning-rgb: 255, 206, 0;
-  --ion-color-warning-contrast: #ffffff;
-  --ion-color-warning-contrast-rgb: 255, 255, 255;
-  --ion-color-warning-shade: #e0b500;
-  --ion-color-warning-tint: #ffd31a;
+  --color-warning: #ffce00;
+  --color-warning-rgb: 255, 206, 0;
+  --color-warning-contrast: #ffffff;
+  --color-warning-contrast-rgb: 255, 255, 255;
+  --color-warning-shade: #e0b500;
+  --color-warning-tint: #ffd31a;
 
-  --ion-color-danger: #f04141;
-  --ion-color-danger-rgb: 245, 61, 61;
-  --ion-color-danger-contrast: #ffffff;
-  --ion-color-danger-contrast-rgb: 255, 255, 255;
-  --ion-color-danger-shade: #d33939;
-  --ion-color-danger-tint: #f25454;
+  --color-danger: #f04141;
+  --color-danger-rgb: 245, 61, 61;
+  --color-danger-contrast: #ffffff;
+  --color-danger-contrast-rgb: 255, 255, 255;
+  --color-danger-shade: #d33939;
+  --color-danger-tint: #f25454;
 
-  --ion-color-dark: #222428;
-  --ion-color-dark-rgb: 34, 34, 34;
-  --ion-color-dark-contrast: #ffffff;
-  --ion-color-dark-contrast-rgb: 255, 255, 255;
-  --ion-color-dark-shade: #1e2023;
-  --ion-color-dark-tint: #383a3e;
+  --color-dark: #222428;
+  --color-dark-rgb: 34, 34, 34;
+  --color-dark-contrast: #ffffff;
+  --color-dark-contrast-rgb: 255, 255, 255;
+  --color-dark-shade: #1e2023;
+  --color-dark-tint: #383a3e;
+  --color-dark-translucent: rgba(34, 36, 40, 0.6);
 
-  --ion-color-medium: #989aa2;
-  --ion-color-medium-rgb: 152, 154, 162;
-  --ion-color-medium-contrast: #ffffff;
-  --ion-color-medium-contrast-rgb: 255, 255, 255;
-  --ion-color-medium-shade: #86888f;
-  --ion-color-medium-tint: #a2a4ab;
+  --color-medium: #989aa2;
+  --color-medium-rgb: 152, 154, 162;
+  --color-medium-contrast: #ffffff;
+  --color-medium-contrast-rgb: 255, 255, 255;
+  --color-medium-shade: #86888f;
+  --color-medium-tint: #a2a4ab;
 
-  --ion-color-light: #f4f5f8;
-  --ion-color-light-rgb: 244, 244, 244;
-  --ion-color-light-contrast: #000000;
-  --ion-color-light-contrast-rgb: 0, 0, 0;
-  --ion-color-light-shade: #d7d8da;
-  --ion-color-light-tint: #f5f6f9;
-
-  --ion-color-secondary-faded: #ffffffd9;
-  --google-maps-primary: #ffffff;
-  --google-maps-secondary: #333333;
+  --color-light: #f4f5f8;
+  --color-light-rgb: 244, 244, 244;
+  --color-light-contrast: #000000;
+  --color-light-contrast-rgb: 0, 0, 0;
+  --color-light-shade: #d7d8da;
+  --color-light-tint: #f5f6f9;
 }
 
 body {

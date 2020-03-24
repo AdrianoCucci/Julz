@@ -5,13 +5,14 @@ header {
   align-items: stretch;
   justify-content: space-evenly;
   min-height: 70px;
-  background-color: whitesmoke;
+  background-color: var(--color-primary);
   z-index: 999;
 
   h1 {
     display: inline-flex;
     align-self: center;
     margin: 0;
+    color: var(--color-secondary);
   }
 
   app-mobile-menu {

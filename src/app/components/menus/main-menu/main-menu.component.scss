@@ -33,10 +33,12 @@
 
       span {
         padding-top: 1px;
+        color: var(--color-secondary);
 
         &::after {
           content: "";
           display: block;
+          color: inherit;
           border: solid transparent 1px;
           width: 0%;
           transition: 0.3s;
@@ -44,12 +46,17 @@
       }
 
       &:hover span::after {
-        border: solid black 1px;
+        border: solid 1px;
+        border-color: inherit;
         width: 100%;
       }
 
+      &:active {
+        background-color: var(--color-primary-tint);
+      }
+
       &.active {
-        background-color: lightgray;
+        background-color: var(--color-tertiary);
       }
     }
   }

@@ -8,7 +8,7 @@
     display: inline-block;
     margin-left: 12px;
     margin-bottom: 8px;
-    color: gray;
+    color: var(--color-medium);
     font-size: 1.3rem;
     transform: translateY(40px) scale(0.8);
     transform-origin: left;
@@ -21,7 +21,7 @@
   }
 
   &.raised-label label {
-    color: white;
+    color: var(--color-secondary);
     transform: translateY(0) scale(1);
   }
 }

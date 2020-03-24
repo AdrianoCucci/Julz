@@ -21,13 +21,13 @@
     margin: auto;
     object-fit: cover;
     border-radius: 20px;
-    box-shadow: black 0 0 30px;
+    box-shadow: var(--color-dark) 0 0 30px;
     transform: scale(0);
     transition: 0.3s;
   }
 
   &.visible {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: var(--color-dark-translucent);
     pointer-events: all;
     opacity: 1;
 
