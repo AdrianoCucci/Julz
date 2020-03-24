@@ -5,7 +5,11 @@
     margin: 0;
 
     ::ng-deep button {
-      background-color: var(--color-primary-shade);
+      background-color: var(--color-primary-tint);
+
+      &:active {
+        background-color: var(--color-primary-shade);
+      }
     }
   }
 
@@ -14,9 +18,21 @@
     max-height: 0;
     transition: 0.5s;
 
+    app-social-menu {
+      background-color: var(--color-primary-tint);
+    }
+
     &.opened {
       max-height: 60vh;
       overflow: scroll;
+    }
+  }
+}
+
+@media only screen and (min-height: 350px) and (max-height: 600px) {
+  :host {
+    #mobile-menu-container.opened {
+      max-height: 70vh;
     }
   }
 }

@@ -76,3 +76,73 @@ body {
 .hidden {
   display: none;
 }
+
+.heading {
+  display: block;
+  margin: 20px 0 40px 0;
+  color: var(--color-tertiary);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.link,
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.5s;
+
+  span {
+    padding-top: 1px;
+    transition: 0.1s;
+
+    &::after {
+      content: "";
+      display: block;
+      color: inherit;
+      border: solid 1px;
+      width: 12px;
+      transition: 0.3s;
+    }
+  }
+
+  &:hover span::after {
+    border: solid 1px;
+    border-color: inherit;
+    width: 100%;
+  }
+}
+
+.link {
+  span {
+    color: var(--color-tertiary);
+  }
+  
+  &:active span {
+    color: var(--color-tertiary-tint);
+  }
+}
+
+.link-button {
+  width: inherit;
+  height: inherit;
+  padding: 0 20px;
+
+  span {
+    color: var(--color-secondary);
+
+    &::after {
+      border: solid transparent 1px;
+      width: 0%;
+    }
+  }
+
+  &:hover {
+    background-color: var(--color-primary-tint);
+  }
+
+  &.active {
+    background-color: var(--color-primary-shade);
+  }
+}

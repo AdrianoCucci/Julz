@@ -20,45 +20,6 @@
     justify-content: center;
     width: inherit;
     height: 100%;
-
-    a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: inherit;
-      height: inherit;
-      padding: 0 20px;
-      text-decoration: none;
-      transition: 0.5s;
-
-      span {
-        padding-top: 1px;
-        color: var(--color-secondary);
-
-        &::after {
-          content: "";
-          display: block;
-          color: inherit;
-          border: solid transparent 1px;
-          width: 0%;
-          transition: 0.3s;
-        }
-      }
-
-      &:hover span::after {
-        border: solid 1px;
-        border-color: inherit;
-        width: 100%;
-      }
-
-      &:active {
-        background-color: var(--color-primary-tint);
-      }
-
-      &.active {
-        background-color: var(--color-tertiary);
-      }
-    }
   }
 
   &[stacked] {
