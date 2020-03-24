@@ -1,5 +1,5 @@
-@import "../../../styles.scss";
+@import "../page.scss";
 
 :host {
-  @include page-style();
+  @include pageStyle();
 }

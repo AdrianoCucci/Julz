@@ -1,7 +1,7 @@
-@import "../../../styles.scss";
+@import "../page.scss";
 
 :host {
-    @include page-style();
+  @include pageStyle();
 
     app-image-view {
         margin: 10px;

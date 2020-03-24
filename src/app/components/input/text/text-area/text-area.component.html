@@ -1,3 +1,3 @@
-<label *ngIf="labelText != null" [for]="inputId">{{labelText}}</label>
+<label *ngIf="label !== ''" [for]="inputId">{{label}}</label>
 <textarea [name]="inputId" [id]="inputId" [required]="required" [placeholder]="placeholder" [(ngModel)]="value"
     (focus)="raisedLabel = true" (blur)="raisedLabel = !(value === '')"></textarea>
