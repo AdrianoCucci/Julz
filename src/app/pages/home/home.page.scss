@@ -18,17 +18,6 @@
       var(--color-secondary-tint) 50%
     );
 
-    .floating-text {
-      display: flex;
-      flex-flow: column;
-      height: 100%;
-      padding: 12%;
-
-      p {
-        line-height: 1.5;
-      }
-    }
-
     .spotify-embed iframe {
       width: 100%;
       min-height: 100%;

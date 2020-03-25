@@ -147,3 +147,15 @@ body {
     background-color: var(--color-primary-shade);
   }
 }
+
+.floating-text {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 100%;
+  padding: 12%;
+
+  p {
+    line-height: 1.5;
+  }
+}

@@ -7,11 +7,13 @@ import { GalleryPage } from './gallery/gallery.page';
 import { ComponentsModule } from '../components/components.module';
 import { HttpClientModule } from '@angular/common/http';
 import { PageNotFoundPage } from './page-not-found/page-not-found.page';
+import { VideosPage } from './videos/videos.page';
 
 const pages = [
   HomePage,
   MusicPage,
   BiographyPage,
+  VideosPage,
   GalleryPage,
   PageNotFoundPage
 ];
