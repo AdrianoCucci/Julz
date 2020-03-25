@@ -5,7 +5,7 @@
     margin: 0;
 
     ::ng-deep button {
-      background-color: var(--color-primary-tint);
+      background-color: var(--color-primary-translucent);
 
       &:active {
         background-color: var(--color-primary-shade);
@@ -17,6 +17,10 @@
     overflow: hidden;
     max-height: 0;
     transition: 0.5s;
+
+    app-main-menu {
+      background-color: var(--color-primary);
+    }
 
     app-social-menu {
       background-color: var(--color-primary-tint);

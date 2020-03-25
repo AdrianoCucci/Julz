@@ -1,24 +1,7 @@
 :host {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   flex: 1;
   overflow: hidden;
-
-  &[align-h="center"] {
-    justify-content: center;
-  }
-
-  &[align-h="right"] {
-    justify-content: flex-end;
-  }
-
-  &[align-v="center"] {
-    align-items: center;
-  }
-
-  &[align-v="bottom"] {
-    align-items: flex-end;
-  }
 
   &[size="xs"] {
     flex: 0.25;
