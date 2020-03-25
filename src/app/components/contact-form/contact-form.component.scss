@@ -1,3 +1,12 @@
 :host {
-    display: block;
+  display: block;
+
+  app-text-input.outlined ::ng-deep input,
+  app-text-area.outlined ::ng-deep textarea {
+    border-color: var(--color-secondary);
+
+    &:hover {
+      box-shadow: inset var(--color-secondary) 0 0 5px;
+    }
+  }
 }
