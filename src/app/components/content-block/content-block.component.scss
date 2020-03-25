@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 100%;
+  padding: 12%;
+
+  div ::ng-deep p {
+    line-height: 1.5;
+  }
+}

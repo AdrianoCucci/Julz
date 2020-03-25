@@ -14,7 +14,13 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  :host section {
-    flex-flow: column;
+  :host {
+    section {
+      flex-flow: column;
+    }
+    
+    &.mobile-flex-reverse section {
+      flex-flow: column-reverse;
+    }
   }
 }

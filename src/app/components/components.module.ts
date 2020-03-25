@@ -21,6 +21,7 @@ import { TextInputComponent } from './input/text/text-input/text-input.component
 import { TextAreaComponent } from './input/text/text-area/text-area.component';
 import { ButtonComponent } from './input/button/button.component';
 import { LinkButtonComponent } from './input/link-button/link-button.component';
+import { ContentBlockComponent } from './content-block/content-block.component';
 
 const components = [
   NavigationComponent,
@@ -39,7 +40,8 @@ const components = [
   TextInputComponent,
   TextAreaComponent,
   ButtonComponent,
-  LinkButtonComponent
+  LinkButtonComponent,
+  ContentBlockComponent
 ];
 
 @NgModule({

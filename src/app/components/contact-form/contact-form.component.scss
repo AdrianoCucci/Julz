@@ -3,6 +3,7 @@
 
   app-text-input.outlined ::ng-deep input,
   app-text-area.outlined ::ng-deep textarea {
+    color: var(--color-secondary);
     border-color: var(--color-secondary);
 
     &:hover {

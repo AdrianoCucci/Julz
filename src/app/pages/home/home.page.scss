@@ -10,13 +10,6 @@
   #row-spotify-sample ::ng-deep section {
     align-items: center;
     padding: 8% 6%;
-    background: linear-gradient(
-      45deg,
-      var(--color-secondary-tint) 15%,
-      var(--color-secondary) 15%,
-      var(--color-secondary) 50%,
-      var(--color-secondary-tint) 50%
-    );
 
     .spotify-embed iframe {
       width: 100%;

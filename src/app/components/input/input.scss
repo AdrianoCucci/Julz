@@ -1,6 +1,6 @@
 @mixin inputStyle() {
   display: inline-block;
-  margin: 20px 0;
+  margin: 10px 0;
   overflow: hidden;
 
   input,
@@ -8,6 +8,7 @@
   button,
   a.link-button {
     display: inherit;
+    width: inherit;
     padding: 10px;
     border: solid transparent 2px;
     border-radius: inherit;
@@ -49,14 +50,7 @@
   }
 
   &.block {
-    display: block;
-
-    input,
-    textarea,
-    button,
-    a.link-button {
-      width: 100%;
-    }
+    width: 100%;
   }
 
   &.rounded {

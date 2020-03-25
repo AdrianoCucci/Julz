@@ -86,14 +86,22 @@ body {
   font-size: 2rem;
 }
 
-.block-text {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  height: 100%;
-  padding: 12%;
+.stripe-background {
+  background: linear-gradient(
+    45deg,
+    var(--color-secondary-tint) 15%,
+    var(--color-secondary) 15%,
+    var(--color-secondary) 50%,
+    var(--color-secondary-tint) 50%
+  );
+}
 
-  p {
-    line-height: 1.5;
-  }
+.stripe-background-r {
+  background: linear-gradient(
+    -45deg,
+    var(--color-secondary) 15%,
+    var(--color-secondary-tint) 15%,
+    var(--color-secondary-tint) 50%,
+    var(--color-secondary) 50%
+  );
 }
