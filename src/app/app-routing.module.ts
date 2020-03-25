@@ -8,8 +8,8 @@ import { GalleryPage } from './pages/gallery/gallery.page';
 import { PageNotFoundPage } from './pages/page-not-found/page-not-found.page';
 
 const routes: Routes = [
-  { path: "", redirectTo: "home", pathMatch: "full" },
-  { path: "home", component: HomePage },
+  { path: "home", redirectTo: "" },
+  { path: "", component: HomePage },
   { path: "music", component: MusicPage },
   { path: "biography", component: BiographyPage },
   { path: "videos", component: VideosPage },
