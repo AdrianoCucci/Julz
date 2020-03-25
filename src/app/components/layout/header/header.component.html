@@ -1,0 +1,7 @@
+<header>
+    <img *ngIf="bannerImage" [src]="bannerImage" alt="banner-image" class="banner-image">
+    <div class="text-content">
+        <h2 *ngIf="heading">{{heading}}</h2>
+        <span *ngIf="tagline" class="tagline">{{tagline}}</span>
+    </div>
+</header>

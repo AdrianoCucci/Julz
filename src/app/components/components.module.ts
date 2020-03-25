@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { NavigationComponent } from './navigation/navigation.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
 import { MainMenuComponent } from './menus/main-menu/main-menu.component';
 import { SocialMenuComponent } from './menus/social-menu/social-menu.component';
 import { MobileMenuComponent } from './menus/mobile-menu/mobile-menu.component';
@@ -14,7 +16,6 @@ import { ImageViewComponent } from './images/image-view/image-view.component';
 import { ImageModalComponent } from './images/image-modal/image-modal.component';
 import { ImageCarouselComponent } from './images/carousel/image-carousel/image-carousel.component';
 import { CarouselImageComponent } from './images/carousel/carousel-image/carousel-image.component';
-import { FooterComponent } from './footer/footer.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { TextInputComponent } from './input/text/text-input/text-input.component';
 import { TextAreaComponent } from './input/text/text-area/text-area.component';
@@ -23,6 +24,7 @@ import { LinkButtonComponent } from './input/link-button/link-button.component';
 
 const components = [
   NavigationComponent,
+  HeaderComponent,
   FooterComponent,
   MainMenuComponent,
   SocialMenuComponent,
