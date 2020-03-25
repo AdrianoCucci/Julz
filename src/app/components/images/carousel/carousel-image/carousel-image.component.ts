@@ -7,7 +7,8 @@ import { ImageComponent } from '../../image-component';
   styleUrls: ['./carousel-image.component.scss']
 })
 export class CarouselImageComponent extends ImageComponent {
-  @Input() @HostBinding("attr.animation") public animation: string;
+  @Input() @HostBinding("attr.in-animation") public inAnimation: Animation;
+  @Input() @HostBinding("attr.out-animation") public outAnimation: Animation;
 
   @HostBinding("class.active") private _classActive: boolean;
   @HostBinding("class.exiting") private _classExiting: boolean;
@@ -21,12 +22,12 @@ export class CarouselImageComponent extends ImageComponent {
 
   public constructor() {
     super();
-    this.animation = "slide";
+    this.inAnimation = "cut";
+    this.outAnimation = "cut";
   }
 
   public animateIn(value: "left" | "right") {
     this._classActive = true;
-    this._classExiting = false;
 
     this._classInL = value === "left";
     this._classInR = value === "right";
@@ -34,12 +35,12 @@ export class CarouselImageComponent extends ImageComponent {
     this._classOutL = false;
     this._classOutR = false;
 
+    this._classExiting = false;
     clearTimeout(this._exitTimeout);
   }
 
   public animateOut(value: "left" | "right") {
     this._classActive = false;
-    this._classExiting = true;
 
     this._classOutL = value === "left";
     this._classOutR = value === "right";
@@ -47,6 +48,11 @@ export class CarouselImageComponent extends ImageComponent {
     this._classInL = false;
     this._classInR = false;
 
-    this._exitTimeout = setTimeout(() => this._classExiting = false, 1000);
+    if(this.outAnimation !== "cut") {
+      this._classExiting = true;
+      this._exitTimeout = setTimeout(() => this._classExiting = false, 1000);
+    }
   }
 }
+
+type Animation = "cut" | "slide" | "fade" | "layer";

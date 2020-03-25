@@ -12,30 +12,44 @@
     object-fit: cover;
   }
 
+  &.active {
+    z-index: 1;
+  }
+
   &.active,
   &.exiting {
     display: block;
+  }
 
-    &[animation="slide"] {
+  &.active {
+    &[in-animation="slide"] {
       &.in-l {
         animation: inSlideLeft 1s forwards;
       }
-      &.out-l {
-        animation: outSlideLeft 1s forwards;
-      }
       &.in-r {
         animation: inSlideRight 1s forwards;
+      }
+    }
+
+    &[in-animation="fade"] {
+      &.in-l,
+      &.in-r {
+        animation: fadeIn 1s forwards;
+      }
+    }
+  }
+
+  &.exiting {
+    &[out-animation="slide"] {
+      &.out-l {
+        animation: outSlideLeft 1s forwards;
       }
       &.out-r {
         animation: outSlideRight 1s forwards;
       }
     }
 
-    &[animation="fade"] {
-      &.in-l,
-      &.in-r {
-        animation: fadeIn 1s forwards;
-      }
+    &[out-animation="fade"] {
       &.out-l,
       &.out-r {
         animation: fadeOut 1s forwards;
