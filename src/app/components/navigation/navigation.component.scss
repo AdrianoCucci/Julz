@@ -1,27 +1,31 @@
-header {
+:host {
+  display: block;
   position: sticky;
   top: 0;
-  display: flex;
-  align-items: stretch;
-  justify-content: space-evenly;
-  min-height: 70px;
-  background-color: var(--color-primary);
   z-index: 999;
 
-  h1 {
-    display: inline-flex;
-    align-self: center;
-    margin: 0;
-    color: var(--color-secondary);
-  }
+  header {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    min-height: 70px;
+    background-color: var(--color-primary-translucent);
 
-  app-mobile-menu {
-    display: none;
+    h1 {
+      display: inline-flex;
+      align-self: center;
+      margin: 0;
+      color: var(--color-secondary);
+    }
+
+    app-mobile-menu {
+      display: none;
+    }
   }
 }
 
 @media only screen and (max-width: 1000px) {
-  header {
+  :host header {
     flex-flow: column;
 
     h1 {

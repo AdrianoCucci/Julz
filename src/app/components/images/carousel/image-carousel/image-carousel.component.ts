@@ -32,7 +32,7 @@ export class ImageCarouselComponent implements AfterViewInit {
     }
   }
 
-  public nextImage() {
+  public nextImage(disableAutoScroll: boolean = true) {
     const imagesLength: number = this._carouselImages.length;
 
     if(imagesLength > 1) {
@@ -45,9 +45,11 @@ export class ImageCarouselComponent implements AfterViewInit {
 
       this._carouselImages[this._activeIndex].animateIn("left");
     }
+
+    this._allowAutoScroll = !disableAutoScroll;
   }
 
-  public prevImage() {
+  public prevImage(disableAutoScroll: boolean = true) {
     const imagesLength: number = this._carouselImages.length;
 
     if(imagesLength > 1) {
@@ -60,10 +62,8 @@ export class ImageCarouselComponent implements AfterViewInit {
 
       this._carouselImages[this._activeIndex].animateIn("right");
     }
-  }
 
-  @HostListener("mouseenter") private mouseEnter() {
-    this._allowAutoScroll = false;
+    this._allowAutoScroll = !disableAutoScroll;
   }
 
   @HostListener("mouseleave") private mouseLeave() {
@@ -75,11 +75,12 @@ export class ImageCarouselComponent implements AfterViewInit {
   }
   @Input() public set autoScroll(value: boolean) {
     this._autoScroll = value;
+    this._allowAutoScroll = value;
 
     if(value) {
       this._scrollInterval = setInterval(() => {
         if(this._allowAutoScroll) {
-          this.nextImage();
+          this.nextImage(false);
         }
       }, 5000);
     }

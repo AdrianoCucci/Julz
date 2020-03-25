@@ -3,7 +3,11 @@
 :host {
   @include pageStyle();
 
-    app-image-view {
-        margin: 10px;
-    }
+  .gallery-container {
+    padding: 50px;
+  }
+
+  app-image-view {
+    margin: 10px;
+  }
 }

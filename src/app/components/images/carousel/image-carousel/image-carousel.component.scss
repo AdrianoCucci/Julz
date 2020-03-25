@@ -30,15 +30,22 @@
     button {
       width: 10%;
       padding: 0;
+      background: none;
       border: none;
-      background-color: var(--color-medium);
-      opacity: 0.1;
       outline: none;
       cursor: pointer;
-      transition: 0.3s;
+      transition: 0.25s;
 
-      &:hover {
-        opacity: 0.8;
+      fa-icon ::ng-deep svg {
+        color: var(--color-secondary);
+        stroke: var(--color-medium-shade);
+        stroke-width: 10px;
+        opacity: 0.3;
+        transition: 0.25s;
+      }
+
+      &:hover fa-icon ::ng-deep svg {
+        opacity: 1;
       }
 
       &:active {
