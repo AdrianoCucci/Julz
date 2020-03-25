@@ -20,6 +20,48 @@
     justify-content: center;
     width: inherit;
     height: 100%;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      height: inherit;
+      width: inherit;
+      padding: 15px 20px;
+      color: var(--color-secondary);
+      transition: 0.5s;
+
+      span {
+        padding-top: 1px;
+        transition: 0.1s;
+
+        &::after {
+          content: "";
+          display: block;
+          color: inherit;
+          border: solid 1px;
+          width: 0%;
+          opacity: 0;
+          transition: 0.3s;
+        }
+      }
+
+      &:hover span::after {
+        border: solid 1px;
+        border-color: inherit;
+        width: 100%;
+        opacity: 1;
+      }
+
+      &:hover {
+        background-color: var(--color-primary-tint);
+      }
+
+      &.active {
+        background-color: var(--color-primary-shade);
+      }
+    }
   }
 
   &[stacked] {

@@ -5,7 +5,8 @@
 
   input,
   textarea,
-  button {
+  button,
+  a.link-button {
     display: inherit;
     padding: 10px;
     border: solid transparent 2px;
@@ -30,9 +31,12 @@
     }
   }
 
-  button {
+  button,
+  a.link-button {
     color: var(--color-secondary);
     background-color: var(--color-tertiary);
+    text-align: center;
+    text-decoration: none;
     cursor: pointer;
 
     &:hover {
@@ -61,7 +65,8 @@
   &.outlined {
     input,
     textarea,
-    button {
+    button,
+    a.link-button {
       background: none;
       border: solid var(--color-secondary) 2px;
       color: var(--color-secondary);

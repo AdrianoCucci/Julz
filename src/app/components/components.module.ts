@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { NavigationComponent } from './navigation/navigation.component';
 import { MainMenuComponent } from './menus/main-menu/main-menu.component';
@@ -18,7 +19,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { TextInputComponent } from './input/text/text-input/text-input.component';
 import { TextAreaComponent } from './input/text/text-area/text-area.component';
 import { ButtonComponent } from './input/button/button.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LinkButtonComponent } from './input/link-button/link-button.component';
 
 const components = [
   NavigationComponent,
@@ -35,7 +36,8 @@ const components = [
   ContactFormComponent,
   TextInputComponent,
   TextAreaComponent,
-  ButtonComponent
+  ButtonComponent,
+  LinkButtonComponent
 ];
 
 @NgModule({
