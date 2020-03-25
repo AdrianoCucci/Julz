@@ -1,5 +1,17 @@
-<app-image-carousel [autoScroll]="true">
-    <app-carousel-image src="assets/images/placeholder-1.jpg" alt="placeholder-image"></app-carousel-image>
-    <app-carousel-image src="assets/images/placeholder-2.jpg" alt="placeholder-image"></app-carousel-image>
-    <app-carousel-image src="assets/images/placeholder-3.jpg" alt="placeholder-image"></app-carousel-image>
-</app-image-carousel>
+<app-row id="carousel-section">
+    <app-column>
+        <app-image-carousel [autoScroll]="true">
+            <app-carousel-image src="assets/images/placeholder-1.jpg" alt="placeholder-image"></app-carousel-image>
+            <app-carousel-image src="assets/images/placeholder-2.jpg" alt="placeholder-image"></app-carousel-image>
+            <app-carousel-image src="assets/images/placeholder-3.jpg" alt="placeholder-image"></app-carousel-image>
+        </app-image-carousel>
+    </app-column>
+</app-row>
+<app-row>
+    <app-column align-h="center" align-v="center">
+        <span>Sample Text...</span>
+    </app-column>
+    <app-column align-h="center">
+        <img src="assets/images/placeholder-2.jpg" alt="placeholder-image">
+    </app-column>
+</app-row>

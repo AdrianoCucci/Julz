@@ -12,11 +12,11 @@
   }
 
   &[align-v="center"] {
-    justify-content: center;
+    align-items: center;
   }
 
   &[align-v="bottom"] {
-    justify-content: flex-end;
+    align-items: flex-end;
   }
 
   &[size="xs"] {
