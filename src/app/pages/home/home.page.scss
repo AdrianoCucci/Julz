@@ -2,4 +2,8 @@
 
 :host {
   @include pageStyle();
+
+  app-image-carousel {
+    height: 100vh;
+  }
 }

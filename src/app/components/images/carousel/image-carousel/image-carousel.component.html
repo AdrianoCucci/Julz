@@ -1,0 +1,13 @@
+<div class="images-container">
+    <ng-content></ng-content>
+</div>
+
+<div class="controls-container">
+    <button class="control-btn-left" (click)="prevImage()">
+        <fa-icon [icon]="buttonIcon" size="3x" [styles]="{'color': 'var(--color-secondary)'}"></fa-icon>
+    </button>
+    <button class="control-btn-right" (click)="nextImage()">
+        <fa-icon [icon]="buttonIcon" size="3x" [styles]="{'color': 'var(--color-secondary)'}" flip="horizontal">
+        </fa-icon>
+    </button>
+</div>

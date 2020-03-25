@@ -1,8 +1,12 @@
 :host {
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  display: block;
+
+  section {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 
   &[full-width] ::ng-deep app-column {
     width: 100%;
@@ -10,7 +14,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  :host {
+  :host section {
     flex-flow: column;
   }
 }

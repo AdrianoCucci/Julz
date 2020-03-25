@@ -11,11 +11,14 @@ import { AppRoutingModule } from '../app-routing.module';
 import { ColumnComponent } from './layout/column/column.component';
 import { ImageViewComponent } from './images/image-view/image-view.component';
 import { ImageModalComponent } from './images/image-modal/image-modal.component';
+import { ImageCarouselComponent } from './images/carousel/image-carousel/image-carousel.component';
+import { CarouselImageComponent } from './images/carousel/carousel-image/carousel-image.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { TextInputComponent } from './input/text/text-input/text-input.component';
 import { TextAreaComponent } from './input/text/text-area/text-area.component';
 import { ButtonComponent } from './input/button/button.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 const components = [
   NavigationComponent,
@@ -27,6 +30,8 @@ const components = [
   ColumnComponent,
   ImageViewComponent,
   ImageModalComponent,
+  ImageCarouselComponent,
+  CarouselImageComponent,
   ContactFormComponent,
   TextInputComponent,
   TextAreaComponent,
@@ -37,7 +42,8 @@ const components = [
   imports: [
     CommonModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
   ],
   declarations: components,
   exports: components,

@@ -1,0 +1,99 @@
+:host {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+  }
+
+  &.active,
+  &.exiting {
+    display: block;
+
+    &[animation="slide"] {
+      &.in-l {
+        animation: inSlideLeft 1s forwards;
+      }
+      &.out-l {
+        animation: outSlideLeft 1s forwards;
+      }
+      &.in-r {
+        animation: inSlideRight 1s forwards;
+      }
+      &.out-r {
+        animation: outSlideRight 1s forwards;
+      }
+    }
+
+    &[animation="fade"] {
+      &.in-l,
+      &.in-r {
+        animation: fadeIn 1s forwards;
+      }
+      &.out-l,
+      &.out-r {
+        animation: fadeOut 1s forwards;
+      }
+    }
+  }
+}
+
+@keyframes inSlideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes outSlideLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes inSlideRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes outSlideRight {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

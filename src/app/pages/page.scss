@@ -1,6 +1,5 @@
 @mixin pageStyle() {
   display: block;
-  padding: 50px 5% 25px 5%;
-  min-height: 100vh;
+  min-height: 90vh;
   background-color: var(--color-secondary);
 }

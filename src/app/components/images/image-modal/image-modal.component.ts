@@ -8,17 +8,17 @@ import { ImageReference } from 'src/app/interfaces/image-reference';
   styleUrls: ['./image-modal.component.scss']
 })
 export class ImageModalComponent extends ImageComponent {
-  @HostBinding("class.visible") private _visible: boolean;
+  @HostBinding("class.visible") public visible: boolean;
 
   public show(imageReference?: ImageReference) {
     if(imageReference) {
       this.src = imageReference.src;
       this.alt = imageReference.alt;
     }
-    this._visible = true;
+    this.visible = true;
   }
 
   @HostListener("click") public hide() {
-    this._visible = false;
+    this.visible = false;
   }
 }
