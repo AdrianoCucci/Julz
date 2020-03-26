@@ -1,5 +1,5 @@
 <img [src]="src" [alt]="alt">
 
-<div class="hover-container">
-    <span class="hover-title">Title</span>
+<div *ngIf="caption" class="hover-container">
+    <span>{{caption}}</span>
 </div>

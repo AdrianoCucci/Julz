@@ -1,6 +1,6 @@
 import { Component, HostListener, EventEmitter, Output } from '@angular/core';
 import { ImageComponent } from '../image-component';
-import { ImageReference } from 'src/app/interfaces/image-reference';
+import { ImageContent } from 'src/app/interfaces/image-reference';
 
 @Component({
   selector: 'app-image-view',
@@ -8,11 +8,11 @@ import { ImageReference } from 'src/app/interfaces/image-reference';
   styleUrls: ['./image-view.component.scss']
 })
 export class ImageViewComponent extends ImageComponent {
-  @Output() public readonly onClick: EventEmitter<ImageReference>;
+  @Output() public readonly onClick: EventEmitter<ImageContent>;
 
   public constructor() {
     super();
-    this.onClick = new EventEmitter<ImageReference>();
+    this.onClick = new EventEmitter<ImageContent>();
   }
 
   @HostListener("click") private emitOnClick() {

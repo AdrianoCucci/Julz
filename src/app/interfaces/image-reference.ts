@@ -1,6 +1,6 @@
-export interface ImageReference {
+export interface ImageContent {
     src: string;
     alt: string;
-    title?: string;
+    caption?: string;
     description?: string;
 }

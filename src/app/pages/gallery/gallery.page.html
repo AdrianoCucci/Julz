@@ -2,8 +2,9 @@
 
 <div class="gallery-container stripe-background">
     <app-row *ngFor="let row of gallaryRows">
-        <app-column *ngFor="let image of row.images" align-h="center" align-v="center">
-            <app-image-view [src]="image.src" [alt]="image.alt" (onClick)="imageModal.show($event)"></app-image-view>
+        <app-column *ngFor="let image of row.rowImages" align-h="center" align-v="center">
+            <app-image-view [src]="image.src" [alt]="image.alt" [caption]="image.caption"
+                [description]="image.description" (onClick)="imageModal.show($event)"></app-image-view>
         </app-column>
     </app-row>
 </div>

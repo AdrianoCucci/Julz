@@ -1,6 +1,6 @@
 import { Component, HostBinding, HostListener } from '@angular/core';
 import { ImageComponent } from '../image-component';
-import { ImageReference } from 'src/app/interfaces/image-reference';
+import { ImageContent } from 'src/app/interfaces/image-reference';
 
 @Component({
   selector: 'app-image-modal',
@@ -10,10 +10,12 @@ import { ImageReference } from 'src/app/interfaces/image-reference';
 export class ImageModalComponent extends ImageComponent {
   @HostBinding("class.visible") public visible: boolean;
 
-  public show(imageReference?: ImageReference) {
-    if(imageReference) {
-      this.src = imageReference.src;
-      this.alt = imageReference.alt;
+  public show(imageContent?: ImageContent) {
+    if(imageContent) {
+      this.src = imageContent.src;
+      this.alt = imageContent.alt;
+      this.caption = imageContent.caption;
+      this.description = imageContent.description;
     }
     this.visible = true;
   }

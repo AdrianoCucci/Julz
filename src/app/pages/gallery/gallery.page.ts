@@ -2,8 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { Page } from '../page';
 import { Title, Meta } from '@angular/platform-browser';
 import { ImageModalComponent } from 'src/app/components/images/image-modal/image-modal.component';
-import { ImageReference } from 'src/app/interfaces/image-reference';
-import gallaryRowsJson from 'src/assets/data/gallery-images.json';
+import { ImageContent } from 'src/app/interfaces/image-reference';
 
 @Component({
   selector: 'app-gallery-page',
@@ -19,10 +18,95 @@ export class GalleryPage extends Page {
     super(title, meta);
     this._title.setTitle("Gallery");
 
-    this.gallaryRows = gallaryRowsJson;
+    this.gallaryRows = [
+      {
+        rowImages: [
+          {
+            src: "assets/images/placeholder-1.jpg",
+            alt: "image-placeholder",
+            caption: "Caption",
+            description: "Description..."
+          },
+          {
+            src: "assets/images/placeholder-2.jpg",
+            alt: "image-placeholder",
+            caption: "Caption",
+            description: "Description..."
+          },
+          {
+            src: "assets/images/placeholder-3.jpg",
+            alt: "image-placeholder",
+            caption: "Caption",
+            description: "Description..."
+          },
+          {
+            src: "assets/images/placeholder-1.jpg",
+            alt: "image-placeholder",
+            caption: "Caption",
+            description: "Description..."
+          }
+        ]
+      },
+      {
+        rowImages: [
+          {
+            src: "assets/images/placeholder-1.jpg",
+            alt: "image-placeholder",
+            caption: "Caption",
+            description: "Description..."
+          },
+          {
+            src: "assets/images/placeholder-2.jpg",
+            alt: "image-placeholder",
+            caption: "Caption",
+            description: "Description..."
+          },
+          {
+            src: "assets/images/placeholder-3.jpg",
+            alt: "image-placeholder",
+            caption: "Caption",
+            description: "Description..."
+          },
+          {
+            src: "assets/images/placeholder-1.jpg",
+            alt: "image-placeholder",
+            caption: "Caption",
+            description: "Description..."
+          }
+        ]
+      },
+      {
+        rowImages: [
+          {
+            src: "assets/images/placeholder-1.jpg",
+            alt: "image-placeholder",
+            caption: "Caption",
+            description: "Description..."
+          },
+          {
+            src: "assets/images/placeholder-2.jpg",
+            alt: "image-placeholder",
+            caption: "Caption",
+            description: "Description..."
+          },
+          {
+            src: "assets/images/placeholder-3.jpg",
+            alt: "image-placeholder",
+            caption: "Caption",
+            description: "Description..."
+          },
+          {
+            src: "assets/images/placeholder-1.jpg",
+            alt: "image-placeholder",
+            caption: "Caption",
+            description: "Description..."
+          }
+        ]
+      }
+    ];
   }
 }
 
 interface GallaryRow {
-  images: ImageReference[];
+  rowImages: ImageContent[];
 }
