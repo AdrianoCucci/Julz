@@ -2,4 +2,12 @@
 
 :host {
   @include pageStyle();
+
+  app-row:nth-of-type(even) {
+    background-color: var(--color-light);
+  }
+
+  .embed {
+    width: 100%;
+  }
 }

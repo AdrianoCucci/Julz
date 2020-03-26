@@ -109,3 +109,20 @@ body {
     var(--color-secondary) 50%
   );
 }
+
+.embed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--color-dark) 0 0 20px;
+  
+  iframe {
+    width: inherit;
+    max-width: inherit;
+    height: inherit;
+    max-height: inherit;
+  }
+}

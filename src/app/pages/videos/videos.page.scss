@@ -7,23 +7,10 @@
     background-color: var(--color-light);
   }
 
-  .video-embed {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .embed {
     width: 1280px;
     max-width: 100%;
     height: 60vh;
     max-height: 60vw;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: var(--color-dark) 0 0 20px;
-    
-    iframe {
-      width: inherit;
-      max-width: inherit;
-      height: inherit;
-      max-height: inherit;
-    }
   }
 }
