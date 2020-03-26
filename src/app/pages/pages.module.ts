@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomePage } from './home/home.page';
 import { MusicPage } from './music/music.page';
-import { BiographyPage } from './biography/biography.page';
+import { AboutPage } from './about/about.page';
 import { GalleryPage } from './gallery/gallery.page';
 import { ComponentsModule } from '../components/components.module';
 import { HttpClientModule } from '@angular/common/http';
@@ -12,7 +12,7 @@ import { VideosPage } from './videos/videos.page';
 const pages = [
   HomePage,
   MusicPage,
-  BiographyPage,
+  AboutPage,
   VideosPage,
   GalleryPage,
   PageNotFoundPage

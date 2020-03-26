@@ -32,9 +32,10 @@
       justify-content: flex-end;
       padding: 0 5% 50px 5%;
       color: var(--color-secondary);
-      box-shadow: inset var(--color-dark) 0 0 100px;
+      background: linear-gradient(0deg, var(--color-dark), transparent);
       text-shadow: var(--color-dark) 0 0 6px;
       letter-spacing: 4px;
+      cursor: default;
       z-index: 1;
 
       h2 {
@@ -55,8 +56,6 @@
 
 @media only screen and (max-width: 1024px) {
   :host header .text-content {
-    justify-content: center;
-    padding: 0;
     text-align: center;
   }
 }

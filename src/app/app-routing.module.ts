@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomePage } from './pages/home/home.page';
 import { MusicPage } from './pages/music/music.page';
-import { BiographyPage } from './pages/biography/biography.page';
+import { AboutPage } from './pages/about/about.page';
 import { VideosPage } from './pages/videos/videos.page';
 import { GalleryPage } from './pages/gallery/gallery.page';
 import { PageNotFoundPage } from './pages/page-not-found/page-not-found.page';
@@ -11,9 +11,8 @@ const routes: Routes = [
   { path: "home", redirectTo: "" },
   { path: "", component: HomePage },
   { path: "music", component: MusicPage },
-  { path: "biography", component: BiographyPage },
+  { path: "about", component: AboutPage },
   { path: "videos", component: VideosPage },
-  { path: "gallery", component: GalleryPage },
   { path: "gallery", component: GalleryPage },
   { path: "**", component: PageNotFoundPage }
 ];

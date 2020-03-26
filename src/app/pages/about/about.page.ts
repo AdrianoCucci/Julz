@@ -3,13 +3,13 @@ import { Page } from '../page';
 import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-biography-page',
-  templateUrl: './biography.page.html',
-  styleUrls: ['./biography.page.scss']
+  selector: 'app-about-page',
+  templateUrl: './about.page.html',
+  styleUrls: ['./about.page.scss']
 })
-export class BiographyPage extends Page  {
+export class AboutPage extends Page  {
   public constructor(title: Title, meta: Meta) {
     super(title, meta);
-    this._title.setTitle("Biography");
+    this._title.setTitle("About");
   }
 }
