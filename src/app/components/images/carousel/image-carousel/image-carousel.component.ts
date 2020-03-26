@@ -8,6 +8,8 @@ import { IconDefinition, faChevronLeft } from '@fortawesome/free-solid-svg-icons
   styleUrls: ['./image-carousel.component.scss']
 })
 export class ImageCarouselComponent implements AfterViewInit {
+  @Input() public arrows: boolean;
+
   public readonly buttonIcon: IconDefinition;
 
   @ContentChildren(CarouselImageComponent) private _imagesQuery: QueryList<CarouselImageComponent>;
@@ -21,6 +23,7 @@ export class ImageCarouselComponent implements AfterViewInit {
 
   public constructor() {
     this._activeIndex = 0;
+    this.arrows = true;
     this.buttonIcon = faChevronLeft;
   }
 
@@ -28,7 +31,13 @@ export class ImageCarouselComponent implements AfterViewInit {
     this._carouselImages = this._imagesQuery.toArray();
 
     if(this._carouselImages.length > 0) {
-      setTimeout(() => this._carouselImages[0].animateIn("left"), 1);
+      setTimeout(() => {
+        this._carouselImages[0].animateIn("left")
+
+        if(this._carouselImages.length < 2) {
+          this.arrows = false;
+        }
+      }, 1);
     }
   }
 

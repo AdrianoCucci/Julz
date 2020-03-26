@@ -14,10 +14,11 @@
     width: inherit;
     height: inherit;
     min-height: inherit;
+    max-height: inherit;
     overflow: inherit;
   }
 
-  .controls-container {
+  .arrows-container {
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -53,5 +54,11 @@
         width: 11%;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  :host {
+    max-height: 80vh;
   }
 }

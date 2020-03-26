@@ -2,11 +2,11 @@
     <ng-content></ng-content>
 </div>
 
-<div class="controls-container">
-    <button class="control-btn-left" (click)="prevImage()">
+<div *ngIf="arrows" class="arrows-container">
+    <button class="arrow-btn-left" (click)="prevImage()">
         <fa-icon [icon]="buttonIcon" size="4x"></fa-icon>
     </button>
-    <button class="control-btn-right" (click)="nextImage()">
+    <button class="arrow-btn-right" (click)="nextImage()">
         <fa-icon [icon]="buttonIcon" size="4x" flip="horizontal">
         </fa-icon>
     </button>

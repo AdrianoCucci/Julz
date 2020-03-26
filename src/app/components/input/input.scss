@@ -8,7 +8,10 @@
   button,
   a.link-button {
     display: inherit;
-    width: inherit;
+    width: 100%;
+    min-width: inherit;
+    height: inherit;
+    min-height: inherit;
     padding: 10px;
     border: solid transparent 2px;
     border-radius: inherit;
@@ -34,6 +37,7 @@
 
   button,
   a.link-button {
+    padding: 10px 20px;
     color: var(--color-secondary);
     background-color: var(--color-tertiary);
     text-align: center;
