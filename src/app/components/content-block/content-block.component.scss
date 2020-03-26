@@ -3,9 +3,36 @@
   flex-flow: column;
   justify-content: center;
   height: 100%;
-  padding: 12%;
 
   div ::ng-deep p {
     line-height: 1.5;
+  }
+
+  &[text-align="left"] {
+    text-align: left;
+  }
+
+  &[text-align="center"] {
+    text-align: center;
+  }
+
+  &[text-align="right"] {
+    text-align: right;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  :host {
+    &[text-align-mobile="left"] {
+      text-align: left;
+    }
+
+    &[text-align-mobile="center"] {
+      text-align: center;
+    }
+
+    &[text-align-mobile="right"] {
+      text-align: right;
+    }
   }
 }

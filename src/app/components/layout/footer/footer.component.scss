@@ -7,13 +7,6 @@
 
     app-contact-form {
       width: 100%;
-      padding: 25px 10%;
     }
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  :host footer app-contact-form {
-    padding: 25px 3%;
   }
 }

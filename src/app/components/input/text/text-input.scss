@@ -2,7 +2,6 @@
 
 @mixin textInputStyle() {
   @include inputStyle();
-  min-width: 300px;
 
   label {
     display: inline-block;

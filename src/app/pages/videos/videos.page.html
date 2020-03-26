@@ -1,8 +1,8 @@
 <app-header heading="Videos" tagline="Tagline here" bannerImage="assets/images/placeholder-1.jpg"></app-header>
 
 <app-row>
-    <app-column>
-        <app-content-block heading="Heading">
+    <app-column class="padding">
+        <app-content-block heading="Heading" text-align="right" text-align-mobile="left">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a tristique dolor. Donec ultricies
                 dapibus mi vitae accumsan. Mauris pretium id neque sit amet euismod. Nunc vel odio pretium libero
@@ -12,7 +12,7 @@
             </p>
         </app-content-block>
     </app-column>
-    <app-column size="xl">
+    <app-column size="xl" class="padding">
         <div class="video-embed">
             <iframe src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0"
                 allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -20,8 +20,14 @@
     </app-column>
 </app-row>
 
-<app-row>
-    <app-column>
+<app-row mobile-col-reverse>
+    <app-column size="xl" class="padding">
+        <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </app-column>
+    <app-column  class="padding">
         <app-content-block heading="Heading">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a tristique dolor. Donec ultricies
@@ -31,11 +37,5 @@
                 pellentesque efficitur diam eu condimentum. Donec fringilla velit et mauris ultrices ullamcorper.
             </p>
         </app-content-block>
-    </app-column>
-    <app-column size="xl">
-        <div class="video-embed">
-            <iframe src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0"
-                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
     </app-column>
 </app-row>

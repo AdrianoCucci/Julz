@@ -1,6 +1,6 @@
 <app-header heading="Gallery" tagline="Tagline here" bannerImage="assets/images/placeholder-1.jpg"></app-header>
 
-<div class="gallery-container">
+<div class="gallery-container stripe-background">
     <app-row *ngFor="let row of gallaryRows">
         <app-column *ngFor="let image of row.images" align-h="center" align-v="center">
             <app-image-view [src]="image.src" [alt]="image.alt" (onClick)="imageModal.show($event)"></app-image-view>
