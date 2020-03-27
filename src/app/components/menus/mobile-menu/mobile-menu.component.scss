@@ -1,19 +1,49 @@
 :host {
+  position: absolute;
   width: 100%;
+  height: 100%;
 
-  app-button {
-    margin: 0;
+  .menu-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
 
-    ::ng-deep button {
-      background-color: var(--color-primary-translucent);
+    button {
+      display: flex;
+      justify-content: center;
+      width: 70px;
+      height: 60px;
+      padding: 14px;
+      background: none;
+      border: none;
+      outline: none;
+      overflow: hidden;
 
-      &:active {
-        background-color: var(--color-primary-shade);
+      .hamburger-icon,
+      .hamburger-icon::before,
+      .hamburger-icon::after {
+        display: block;
+        content: "";
+        outline: solid var(--color-secondary) 2px;
+        transition: 0.25s;
+      }
+
+      .hamburger-icon {
+        width: 30px;
+
+        &::before {
+          transform: translateY(-12px);
+        }
+
+        &::after {
+          transform: translateY(12px);
+        }
       }
     }
   }
 
-  #mobile-menu-container {
+  .menu-container {
     overflow: hidden;
     max-height: 0;
     transition: 0.5s;
@@ -26,7 +56,22 @@
       background-color: var(--color-primary-tint);
     }
 
-    &.opened {
+  }
+
+  &.opened {
+    .menu-btn-container button .hamburger-icon {
+      transform: translateX(20vw);
+
+      &::before {
+        transform: translate(-20vw, 0) rotateZ(45deg);
+      }
+
+      &::after {
+        transform: translate(-20vw, 0) rotateZ(-45deg);
+      }
+    }
+
+    .menu-container {
       max-height: 60vh;
       overflow: scroll;
     }

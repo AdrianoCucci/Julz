@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-mobile-menu',
@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./mobile-menu.component.scss']
 })
 export class MobileMenuComponent {
-  @Input() public opened: boolean;
+  @Input() @HostBinding("class.opened") public opened: boolean;
 }
