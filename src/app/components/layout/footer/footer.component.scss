@@ -1,5 +1,6 @@
 :host {
   display: block;
+  color: var(--color-secondary-shade);
 
   footer {
     width: 100%;
@@ -7,6 +8,11 @@
 
     app-contact-form {
       width: 100%;
+    }
+
+    .footer-end {
+      padding: 20px;
+      background-color: var(--color-dark);
     }
   }
 }

@@ -1,6 +1,5 @@
 :host {
   display: flex;
-  flex-flow: column;
   flex: 1;
   overflow: hidden;
 
@@ -22,5 +21,21 @@
 
   &[size="xxl"] {
     flex: 2.5;
+  }
+
+  &[h-align="center"] {
+    justify-content: center;
+  }
+
+  &[h-align="right"] {
+    justify-content: flex-end;
+  }
+
+  &[v-align="center"] {
+    align-items: center;
+  }
+
+  &[v-align="bottom"] {
+    align-items: flex-end;
   }
 }

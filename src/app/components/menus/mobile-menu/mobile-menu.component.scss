@@ -60,14 +60,14 @@
 
   &.opened {
     .menu-btn-container button .hamburger-icon {
-      transform: translateX(20vw);
+      transform: translateX(20vmin);
 
       &::before {
-        transform: translate(-20vw, 0) rotateZ(45deg);
+        transform: translate(-20vmin, 0) rotateZ(45deg);
       }
 
       &::after {
-        transform: translate(-20vw, 0) rotateZ(-45deg);
+        transform: translate(-20vmin, 0) rotateZ(-45deg);
       }
     }
 
