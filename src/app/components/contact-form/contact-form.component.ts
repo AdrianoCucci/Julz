@@ -78,28 +78,9 @@ export class ContactFormComponent {
       finally {
         this._emailing = false;
         this.submitBtnIcon = faPaperPlane;
+        this.contactForm.email = "";
+        this.contactForm.message = "";
       }
-
-      // this._httpClient.post(`${ENVIRONMENT.serverUrl}/sendmail`, this.contactForm).subscribe(
-      //   (response: HttpResponse<void>) => {
-      //     this._emailSentResult = response.error ? "Sorry, something went wrong. Please try again later." : "Email sent successfully!";
-
-      //     this._sentSuccess = !response.error;
-      //     this._sentFail = response.error != null;
-
-      //     this.contactForm.email = "";
-      //     this.contactForm.message = "";
-
-      //     this._emailing = false;
-      //     this.submitBtnIcon = faSyncAlt;
-      //   },
-      //   () => {
-      //     this._emailSentResult = "Sorry, something went wrong. Please try again later.";
-      //     this._sentFail = true;
-      //     this._emailing = false;
-      //     this.submitBtnIcon = faSyncAlt;
-      //   }
-      // );
     }
   }
 
