@@ -69,6 +69,8 @@ export class ContactFormComponent {
         else {
           this._emailSentResult = "Email sent successfully!";
           this._sentSuccess = true;
+          this.contactForm.email = "";
+          this.contactForm.message = "";
         }
       }
       catch(error) {
@@ -78,8 +80,6 @@ export class ContactFormComponent {
       finally {
         this._emailing = false;
         this.submitBtnIcon = faPaperPlane;
-        this.contactForm.email = "";
-        this.contactForm.message = "";
       }
     }
   }
