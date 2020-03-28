@@ -49,13 +49,12 @@
     transition: 0.5s;
 
     app-main-menu {
-      background-color: var(--color-primary);
+      background-color: var(--color-primary-translucent);
     }
 
     app-social-menu {
-      background-color: var(--color-primary-tint);
+      background-color: var(--color-primary-tint-translucent);
     }
-
   }
 
   &.opened {
