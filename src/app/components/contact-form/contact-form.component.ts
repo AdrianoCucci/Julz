@@ -1,7 +1,10 @@
-import { Component, ViewChildren, QueryList } from '@angular/core';
+import { Component, ViewChildren, QueryList, HostBinding } from '@angular/core';
 import { FormInput } from '../input/form-input';
 import { HttpClient } from '@angular/common/http';
 import { ContactForm } from 'src/app/interfaces/contact-form';
+import { ENVIRONMENT } from 'src/environments/environment';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { faPaperPlane, faSyncAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-contact-form',
@@ -9,20 +12,29 @@ import { ContactForm } from 'src/app/interfaces/contact-form';
   styleUrls: ['./contact-form.component.scss']
 })
 export class ContactFormComponent {
-  public contactForm: ContactForm;
+  public readonly contactForm: ContactForm;
+  public submitBtnIcon: IconDefinition;
 
   private readonly _httpClient: HttpClient;
 
+  @HostBinding("class.emailing") private _emailing: boolean;
+  @HostBinding("class.sent-success") private _sentSuccess: boolean;
+  @HostBinding("class.sent-fail") private _sentFail: boolean;
+
   @ViewChildren("field") private _fields: QueryList<FormInput<any>>;
+
+  private _emailSentResult: string;
 
   public constructor(httpClient: HttpClient) {
     this._httpClient = httpClient;
 
     this.contactForm = {
       email: "",
-      subject: "",
+      subject: "Contact Form From Julz Website",
       message: ""
     };
+
+    this.submitBtnIcon = faPaperPlane;
   }
 
   onFormSubmit() {
@@ -34,18 +46,68 @@ export class ContactFormComponent {
       }
     }
 
-    this.sendMail();
     if(formIsValid) {
+      this.sendMail();
     }
   }
 
-  test(event: any) {
-    console.log(event);
+  private async sendMail() {
+    if(!this._emailing) {
+      this._emailing = true;
+      this._emailSentResult = null;
+      this._sentSuccess = false;
+      this._sentFail = false;
+      this.submitBtnIcon = faSyncAlt;
+
+      try {
+        const response: any = await this._httpClient.post(`${ENVIRONMENT.serverUrl}/sendmail`, this.contactForm).toPromise();
+        console.log(response);
+
+        if(response.error) {
+          throw response.error;
+        }
+        else {
+          this._emailSentResult = "Email sent successfully!";
+          this._sentSuccess = true;
+        }
+      }
+      catch(error) {
+        this._emailSentResult = "Sorry, something went wrong. Please try again later.";
+        this._sentFail = true;
+      }
+      finally {
+        this._emailing = false;
+        this.submitBtnIcon = faPaperPlane;
+      }
+
+      // this._httpClient.post(`${ENVIRONMENT.serverUrl}/sendmail`, this.contactForm).subscribe(
+      //   (response: HttpResponse<void>) => {
+      //     this._emailSentResult = response.error ? "Sorry, something went wrong. Please try again later." : "Email sent successfully!";
+
+      //     this._sentSuccess = !response.error;
+      //     this._sentFail = response.error != null;
+
+      //     this.contactForm.email = "";
+      //     this.contactForm.message = "";
+
+      //     this._emailing = false;
+      //     this.submitBtnIcon = faSyncAlt;
+      //   },
+      //   () => {
+      //     this._emailSentResult = "Sorry, something went wrong. Please try again later.";
+      //     this._sentFail = true;
+      //     this._emailing = false;
+      //     this.submitBtnIcon = faSyncAlt;
+      //   }
+      // );
+    }
   }
 
-  private sendMail() {
-    this._httpClient.post("./send-mail.php", {}).subscribe(result => {
-      console.log(result);
-    });
+  public get emailing(): boolean {
+    return this._emailing;
+  }
+
+  public get emailSentResult(): string {
+    return this._emailSentResult;
   }
 }

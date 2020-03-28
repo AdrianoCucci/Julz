@@ -20,7 +20,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { TextInputComponent } from './input/text-input/text-input.component';
 import { TextAreaComponent } from './input/text-input/text-area/text-area.component';
 import { ButtonComponent } from './input/button/button.component';
-import { LinkButtonComponent } from './input/link-button/link-button.component';
+import { LinkButtonComponent } from './input/button/link-button/link-button.component';
 import { ContentBlockComponent } from './content-block/content-block.component';
 
 const components = [

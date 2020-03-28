@@ -7,7 +7,7 @@ import { AppInput } from '../input';
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent extends AppInput {
-  @Input() public text: string;
+  @Input() public disabled: boolean;
 
   public constructor() {
     super("button");

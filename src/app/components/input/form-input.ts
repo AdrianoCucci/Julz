@@ -22,7 +22,6 @@ export abstract class FormInput<T> extends AppInput implements OnInit {
 
     ngOnInit() {
         super.ngOnInit();
-        console.log(this.value);
 
         if(!this.required) {
             this.required = String(this.required) !== "false";

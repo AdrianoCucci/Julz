@@ -38,6 +38,8 @@
 
   button,
   a.link-button {
+    display: flex;
+    justify-content: center;
     padding: 10px 20px;
     color: var(--color-secondary);
     background-color: var(--color-tertiary);
@@ -51,6 +53,18 @@
 
     &:active {
       background-color: var(--color-tertiary-tint);
+    }
+
+    &:disabled {
+      filter: contrast(0.5);
+      pointer-events: none;
+    }
+
+    ::ng-deep {
+      span,
+      fa-icon {
+        margin: 0 4px;
+      }
     }
   }
 

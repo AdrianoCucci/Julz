@@ -10,4 +10,35 @@
       box-shadow: inset var(--color-secondary) 0 0 5px;
     }
   }
+
+  .submit-result {
+    display: none;
+    text-align: center;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  &.sent-success .submit-result {
+    display: block;
+    border-color: var(--color-success);
+    animation: submitResultIntro 0.5s forwards;
+  }
+
+  &.sent-fail .submit-result {
+    display: block;
+    border-color: var(--color-danger);
+    animation: submitResultIntro 0.5s forwards;
+  }
+}
+
+@keyframes submitResultIntro {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

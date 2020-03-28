@@ -4,10 +4,14 @@
     <app-text-input #field type="email" label="Email" required block rounded outlined name="cf-email"
         [(value)]="contactForm.email">
     </app-text-input>
-    <app-text-input #field type="text" label="Subject" required block rounded outlined name="cf-subject"
-        [(value)]="contactForm.subject">
-    </app-text-input>
+
     <app-text-area #field inputId="cf-message" label="Message" required block rounded outlined name="cf-message"
         [(value)]="contactForm.message"></app-text-area>
-    <app-button type="submit" text="SEND" block rounded></app-button>
+
+    <app-button type="submit" block rounded [disabled]="emailing">
+        <fa-icon [icon]="submitBtnIcon" [spin]="emailing"></fa-icon>
+        <span>{{emailing ? 'SENDING...' : 'SEND'}}</span>
+    </app-button>
+
+    <span class="submit-result">{{emailSentResult}}</span>
 </form>
