@@ -83,6 +83,7 @@ export class ImageCarouselComponent implements AfterViewInit {
     return this._autoScroll;
   }
   @Input() public set autoScroll(value: boolean) {
+    console.log(value);
     this._autoScroll = value;
     this._allowAutoScroll = value;
 

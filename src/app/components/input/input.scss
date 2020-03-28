@@ -24,6 +24,7 @@
 
   input,
   textarea {
+    color: var(--color-secondary-contrast);
     background-color: var(--color-secondary);
     cursor: text;
 
@@ -41,7 +42,7 @@
     display: flex;
     justify-content: center;
     padding: 10px 20px;
-    color: var(--color-secondary);
+    color: var(--color-primary);
     background-color: var(--color-tertiary);
     text-align: center;
     text-decoration: none;
@@ -82,14 +83,13 @@
     button,
     a.link-button {
       background: none;
-      border: solid var(--color-tertiary) 2px;
-      color: var(--color-tertiary);
+      border: solid var(--color-secondary) 2px;
     }
 
     input,
     textarea {
       &:hover {
-        box-shadow: inset var(--color-tertiary) 0 0 5px;
+        box-shadow: inset var(--color-secondary) 0 0 5px;
       }
     }
   }

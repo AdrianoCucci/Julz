@@ -28,8 +28,8 @@
       text-decoration: none;
       height: inherit;
       width: inherit;
+      color: var(--color-tertiary);
       padding: 15px 20px;
-      color: var(--color-secondary);
       transition: 0.5s;
 
       span {
@@ -55,11 +55,11 @@
       }
 
       &:hover {
-        background-color: var(--color-primary-tint);
+        background-color: var(--color-secondary-tint);
       }
 
       &.active {
-        background-color: var(--color-primary-shade);
+        background-color: var(--color-secondary);
       }
     }
   }

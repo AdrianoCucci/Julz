@@ -4,16 +4,9 @@
   display: flex;
   align-items: stretch;
   justify-content: space-evenly;
-  min-height: 60px;
+  height: 60px;
   background-color: var(--color-primary-translucent);
   z-index: 999;
-
-  h1 {
-    display: inline-flex;
-    align-self: center;
-    margin: 0;
-    color: var(--color-secondary);
-  }
 
   app-mobile-menu {
     display: none;
