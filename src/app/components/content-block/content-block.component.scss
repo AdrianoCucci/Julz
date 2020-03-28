@@ -3,6 +3,8 @@
   flex-flow: column;
   justify-content: center;
   height: 100%;
+  background-color: var(--color-secondary-translucent);
+  border-radius: 20px;
 
   div ::ng-deep p {
     line-height: 1.5;

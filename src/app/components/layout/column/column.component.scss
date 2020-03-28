@@ -1,5 +1,6 @@
 :host {
   display: flex;
+  flex-flow: column;
   flex: 1;
 
   &[size="xs"] {
@@ -23,18 +24,18 @@
   }
 
   &[h-align="center"] {
-    justify-content: center;
-  }
-
-  &[h-align="right"] {
-    justify-content: flex-end;
-  }
-
-  &[v-align="center"] {
     align-items: center;
   }
 
-  &[v-align="bottom"] {
+  &[h-align="right"] {
     align-items: flex-end;
+  }
+
+  &[v-align="center"] {
+    justify-content: center;
+  }
+
+  &[v-align="bottom"] {
+    justify-content: flex-end;
   }
 }

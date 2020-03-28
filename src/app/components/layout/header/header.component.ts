@@ -8,5 +8,4 @@ import { Component, Input } from '@angular/core';
 export class HeaderComponent {
   @Input() public heading: string;
   @Input() public tagline: string;
-  @Input() public bannerImage: string;
 }
