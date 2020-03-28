@@ -17,8 +17,8 @@ import { ImageModalComponent } from './images/image-modal/image-modal.component'
 import { ImageCarouselComponent } from './images/carousel/image-carousel/image-carousel.component';
 import { CarouselImageComponent } from './images/carousel/carousel-image/carousel-image.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
-import { TextInputComponent } from './input/text/text-input/text-input.component';
-import { TextAreaComponent } from './input/text/text-area/text-area.component';
+import { TextInputComponent } from './input/text-input/text-input.component';
+import { TextAreaComponent } from './input/text-input/text-area/text-area.component';
 import { ButtonComponent } from './input/button/button.component';
 import { LinkButtonComponent } from './input/link-button/link-button.component';
 import { ContentBlockComponent } from './content-block/content-block.component';

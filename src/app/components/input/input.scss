@@ -1,4 +1,5 @@
 @mixin inputStyle() {
+  position: relative;
   display: inline-block;
   margin: 10px 0;
   overflow: hidden;
