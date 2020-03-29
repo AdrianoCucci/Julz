@@ -44,4 +44,13 @@
       transform: scale(1);
     }
   }
+
+  &.TEMP {
+    max-width: 1000px;
+    max-height: 500px;
+
+    img {
+      object-fit: cover;
+    }
+  }
 }
