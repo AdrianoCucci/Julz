@@ -3,22 +3,9 @@
 <img src="assets/images/photos/laying-with-phone.jpg" alt="person-laying-with-phone" class="fixed-background-image">
 
 <div class="gallery-container stripe-background">
-    <h1>NORMAL</h1>
-
     <app-row *ngFor="let row of gallaryRows">
         <app-column *ngFor="let image of row.rowImages" h-align="center" v-align="center">
             <app-image-view class="box-shadow-fade" [src]="image.src" [alt]="image.alt" [caption]="image.caption"
-                [description]="image.description" (onClick)="imageModal.show($event)"></app-image-view>
-        </app-column>
-    </app-row>
-</div>
-
-<div class="gallery-container stripe-background">
-    <h1>CROPPED</h1>
-
-    <app-row *ngFor="let row of gallaryRows">
-        <app-column *ngFor="let image of row.rowImages" h-align="center" v-align="center">
-            <app-image-view class="box-shadow-fade TEMP" [src]="image.src" [alt]="image.alt" [caption]="image.caption"
                 [description]="image.description" (onClick)="imageModal.show($event)"></app-image-view>
         </app-column>
     </app-row>
