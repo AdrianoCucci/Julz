@@ -2,7 +2,7 @@
 
 :host {
   @include pageStyle();
-  background-color: #cc99ff;
+  background-color: var(--color-violet-light);
 
   .embed {
     width: 100%;

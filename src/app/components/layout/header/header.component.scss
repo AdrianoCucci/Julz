@@ -61,12 +61,12 @@
   &.julez-heading-style header .content h1 {
     color: var(--color-dark);
     text-transform: uppercase;
-    text-shadow: var(--color-secondary) 0.6vmax 0.6vmax 1px;
+    text-shadow: var(--color-violet-light) 0.6vmax 0.6vmax 1px;
 
     .last-char {
       display: inline-block;
       transform: scaleX(-1);
-      text-shadow: var(--color-secondary) -0.6vmax 0.6vmax 1px;
+      text-shadow: var(--color-violet-light) -0.6vmax 0.6vmax 1px;
     }
   }
 }
