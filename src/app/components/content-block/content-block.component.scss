@@ -25,6 +25,10 @@
 
 @media only screen and (max-width: 1024px) {
   :host {
+    .heading {
+      text-align: center;
+    }
+
     &[text-align-mobile="left"] {
       text-align: left;
     }

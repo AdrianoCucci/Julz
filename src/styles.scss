@@ -42,6 +42,20 @@ body {
   font-size: 2rem;
 }
 
+.block-quote {
+  font-style: italic;
+  padding: 10px 0 10px 20px;
+  border-left: solid var(--color-light) 4px;
+  border-radius: 10px;
+
+  .reference {
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+}
+
 .fixed-background-image {
   position: fixed;
   top: 0;
