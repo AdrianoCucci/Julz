@@ -3,7 +3,6 @@
 
 body {
   margin: 0;
-  color: var(--color-light);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -40,17 +39,17 @@ body {
   color: var(--color-tertiary);
   font-weight: bold;
   font-size: 2rem;
+  text-shadow: var(--color-dark-translucent) 0.25vmin 0.25vmin 1px;
 }
 
 .block-quote {
   font-style: italic;
   padding: 10px 0 10px 20px;
-  border-left: solid var(--color-light) 4px;
-  border-radius: 10px;
+  color: var(--color-secondary);
+  border-left: solid var(--color-secondary) 4px;
 
   .reference {
     display: block;
-    text-align: right;
     margin-top: 20px;
     font-weight: bold;
   }
