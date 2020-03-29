@@ -37,6 +37,7 @@
       h1 {
         margin-top: 0;
         margin-bottom: 2%;
+        font-family: Anton, Arial, Helvetica, sans-serif;
         font-size: 8vmin;
         text-shadow: var(--color-dark) 0.6vmin 0.6vmin 1px;
         animation: textContentIntro 1s forwards;
@@ -56,10 +57,16 @@
     text-shadow: var(--color-dark) 1vmin 1vmin 1px;
   }
 
-  &.julez-heading-style header .content h1 .last-char {
-    display: inline-block;
-    transform: scaleX(-1);
-    text-shadow: var(--color-dark) -1vmin 1vmin 1px;
+  &.julez-heading-style header .content h1 {
+    color: var(--color-dark);
+    text-transform: uppercase;
+    text-shadow: var(--color-light) 1vmin 1vmin 1px;
+
+    .last-char {
+      display: inline-block;
+      transform: scaleX(-1);
+      text-shadow: var(--color-light) -1vmin 1vmin 1px;
+    }
   }
 }
 
