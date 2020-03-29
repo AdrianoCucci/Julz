@@ -3,10 +3,6 @@
 :host {
   @include pageStyle();
 
-  .fixed-background-image {
-    height: 150vh;
-  }
-
   .gallery-container {
     padding: 8% 6%;
   }
