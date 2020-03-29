@@ -164,6 +164,10 @@ body {
   padding: 8% 6%;
 }
 
+.box-shadow-fade {
+  box-shadow: var(--color-dark-translucent) 1vmin 1vmin 1px;
+}
+
 .heading {
   display: block;
   margin: 20px 0;
@@ -209,7 +213,6 @@ body {
   margin: auto;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: var(--color-dark) 0 0 20px;
 
   iframe {
     width: inherit;

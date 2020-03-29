@@ -1,9 +1,11 @@
-<app-header heading="Gallery" tagline="Tagline here" bannerImage="assets/images/placeholder-1.jpg"></app-header>
+<app-header heading="Gallery" tagline="Tagline here"></app-header>
+
+<img src="assets/images/photos/sitting-with-phone-3.jpg" alt="sitting-with-phone" class="fixed-background-image">
 
 <div class="gallery-container stripe-background">
     <app-row *ngFor="let row of gallaryRows">
         <app-column *ngFor="let image of row.rowImages" align-h="center" align-v="center">
-            <app-image-view [src]="image.src" [alt]="image.alt" [caption]="image.caption"
+            <app-image-view class="box-shadow-fade" [src]="image.src" [alt]="image.alt" [caption]="image.caption"
                 [description]="image.description" (onClick)="imageModal.show($event)"></app-image-view>
         </app-column>
     </app-row>
