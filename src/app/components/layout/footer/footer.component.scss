@@ -10,12 +10,12 @@
       color: var(--color-light);
       font-family: Anton, Arial, Helvetica, sans-serif;
       font-size: 16vmax;
-      text-shadow: var(--color-dark) 1vmin 1vmin 1px;
+      text-shadow: var(--color-dark) 1vmax 1vmax 1px;
 
       .last-char {
         display: inline-block;
         transform: scaleX(-1);
-        text-shadow: var(--color-dark) -1vmin 1vmin 1px;
+        text-shadow: var(--color-dark) -1vmax 1vmax 1px;
       }
     }
 

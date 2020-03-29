@@ -7,6 +7,11 @@
     a {
       height: auto;
       padding: 15px 20px;
+
+      &.hover,
+      &.active {
+        box-shadow: none;
+      }
     }
   }
 }
@@ -56,10 +61,12 @@
 
       &:hover {
         background-color: var(--color-secondary-tint);
+        box-shadow: var(--color-dark) 0.15vmax 0.15vmax 1px;
       }
 
       &.active {
         background-color: var(--color-secondary);
+        box-shadow: var(--color-dark) 0.15vmax 0.15vmax 1px;
       }
     }
   }

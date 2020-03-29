@@ -40,14 +40,14 @@
         margin-bottom: 2%;
         font-family: Anton, Arial, Helvetica, sans-serif;
         font-size: 8vmin;
-        text-shadow: var(--color-dark) 0.6vmin 0.6vmin 1px;
+        text-shadow: var(--color-dark) 0.6vmax 0.6vmax 1px;
         animation: textContentIntro 1s forwards;
       }
 
       span.tagline {
         font-size: 4vmin;
         font-style: italic;
-        text-shadow: var(--color-dark) 3px 3px 1px;
+        text-shadow: var(--color-dark) 0.2vmax 0.2vmax 1px;
         animation: textContentIntro 1s forwards;
       }
     }
@@ -55,25 +55,25 @@
 
   &.large-heading header .content h1 {
     font-size: 14vmin;
-    text-shadow: var(--color-dark) 1vmin 1vmin 1px;
+    text-shadow: var(--color-dark) 0.6vmax 0.6vmax 1px;
   }
 
   &.julez-heading-style header .content h1 {
     color: var(--color-dark);
     text-transform: uppercase;
-    text-shadow: var(--color-light) 1vmin 1vmin 1px;
+    text-shadow: var(--color-light) 0.6vmax 0.6vmax 1px;
 
     .last-char {
       display: inline-block;
       transform: scaleX(-1);
-      text-shadow: var(--color-light) -1vmin 1vmin 1px;
+      text-shadow: var(--color-light) -0.6vmax 0.6vmax 1px;
     }
   }
 }
 
 @media only screen and (max-width: 1024px) {
   :host header .content {
-    padding: 100px 8% 8% 8%;
+    padding: 60px 8% 8% 8%;
     text-align: center;
   }
 }
