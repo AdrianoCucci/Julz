@@ -29,25 +29,53 @@ export class GalleryPage extends Page {
             src: "assets/images/photos/gallery/posing-1.jpg",
             alt: "person-posing",
           },
-        ]
-      },
-      {
-        rowImages: [
           {
             src: "assets/images/photos/gallery/looking-away-1.jpg",
             alt: "person-looking-away",
-          },
-          {
-            src: "assets/images/photos/gallery/holding-mirror.jpg",
-            alt: "person-holding-mirror",
           }
         ]
       },
       {
         rowImages: [
           {
+            src: "assets/images/photos/gallery/holding-mirror.jpg",
+            alt: "person-holding-mirror",
+          },
+          {
             src: "assets/images/photos/gallery/posing-2.jpg",
             alt: "person-posing",
+          },
+          {
+            src: "assets/images/photos/gallery/holding-phone-cord.jpg",
+            alt: "person-holding-phone-cord",
+          }
+        ]
+      },
+      {
+        rowImages: [
+          {
+            src: "assets/images/photos/gallery/posing-with-phone.jpg",
+            alt: "person-posing-with-phone",
+          },
+          {
+            src: "assets/images/photos/gallery/sitting-with-phone-1.jpg",
+            alt: "person-sitting-with-phone",
+          },
+          {
+            src: "assets/images/photos/gallery/sitting-with-phone-2.jpg",
+            alt: "person-sitting-with-phone",
+          }
+        ]
+      },
+      {
+        rowImages: [
+          {
+            src: "assets/images/photos/gallery/talking-on-phone-1.jpg",
+            alt: "person-talking-on-phone",
+          },
+          {
+            src: "assets/images/photos/gallery/talking-on-phone-2.jpg",
+            alt: "person-talking-on-phone",
           }
         ]
       }

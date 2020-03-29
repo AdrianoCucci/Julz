@@ -3,11 +3,21 @@
 :host {
   @include pageStyle();
 
+  .fixed-background-image {
+    height: 150vh;
+  }
+
   .gallery-container {
     padding: 8% 6%;
   }
 
   app-image-view {
     margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  :host .fixed-background-image {
+    height: 100vh;
   }
 }
