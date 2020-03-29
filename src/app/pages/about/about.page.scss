@@ -3,6 +3,10 @@
 :host {
   @include pageStyle();
 
+  .fixed-background-image {
+    height: 140vh;
+  }
+
   app-row {
     .image-container {
       display: flex;

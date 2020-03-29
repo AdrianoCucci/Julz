@@ -38,16 +38,16 @@ export class GalleryPage extends Page {
             alt: "person-looking-away",
           },
           {
-            src: "assets/images/photos/gallery/posing-2.jpg",
-            alt: "person-posing",
-          },
+            src: "assets/images/photos/gallery/holding-mirror.jpg",
+            alt: "person-holding-mirror",
+          }
         ]
       },
       {
         rowImages: [
           {
-            src: "assets/images/photos/gallery/holding-mirror.jpg",
-            alt: "person-holding-mirror",
+            src: "assets/images/photos/gallery/posing-2.jpg",
+            alt: "person-posing",
           }
         ]
       }
