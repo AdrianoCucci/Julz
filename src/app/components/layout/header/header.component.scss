@@ -30,7 +30,6 @@
       display: flex;
       flex-flow: column;
       padding: 150px 8% 8% 8%;
-      text-shadow: var(--color-dark) 0 0 10px;
       letter-spacing: 4px;
       cursor: default;
       z-index: 1;
@@ -39,15 +38,28 @@
         margin-top: 0;
         margin-bottom: 2%;
         font-size: 8vmin;
+        text-shadow: var(--color-dark) 0.6vmin 0.6vmin 1px;
         animation: textContentIntro 1s forwards;
       }
 
       span.tagline {
         font-size: 4vmin;
         font-style: italic;
+        text-shadow: var(--color-dark) 3px 3px 1px;
         animation: textContentIntro 1s forwards;
       }
     }
+  }
+
+  &.large-heading header .content h1 {
+    font-size: 14vmin;
+    text-shadow: var(--color-dark) 1vmin 1vmin 1px;
+  }
+
+  &.julez-heading-style header .content h1 .last-char {
+    display: inline-block;
+    transform: scaleX(-1);
+    text-shadow: var(--color-dark) -1vmin 1vmin 1px;
   }
 }
 

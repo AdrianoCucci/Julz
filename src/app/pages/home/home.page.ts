@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Page } from '../page';
 import { Title, Meta } from '@angular/platform-browser';
-import { ImageContent } from 'src/app/interfaces/image-reference';
+import { ImageContent } from 'src/app/interfaces/image-content';
 
 @Component({
   selector: 'app-home-page',

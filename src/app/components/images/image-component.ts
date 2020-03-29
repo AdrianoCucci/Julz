@@ -1,5 +1,5 @@
 import { Input } from '@angular/core';
-import { ImageContent } from 'src/app/interfaces/image-reference';
+import { ImageContent } from 'src/app/interfaces/image-content';
 
 export abstract class ImageComponent implements ImageContent {
   @Input() public src: string;

@@ -1,6 +1,6 @@
 import { Component, HostListener, EventEmitter, Output } from '@angular/core';
 import { ImageComponent } from '../image-component';
-import { ImageContent } from 'src/app/interfaces/image-reference';
+import { ImageContent } from 'src/app/interfaces/image-content';
 
 @Component({
   selector: 'app-image-view',
