@@ -1,3 +1,4 @@
+@import "../../../theme/responsive.scss";
 @import "../page.scss";
 
 :host {
@@ -8,15 +9,18 @@
   }
 
   app-row {
-    .image-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    app-column {
+      max-width: 1400px;
 
-      img {
-        max-width: 100%;
-        border-radius: 20px;
+      app-content-block {
+        font-size: 1.25rem;
       }
     }
+  }
+}
+
+@include mobileView() {
+  :host app-row app-column app-content-block {
+    font-size: 1rem;
   }
 }

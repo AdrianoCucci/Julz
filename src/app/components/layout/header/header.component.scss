@@ -1,3 +1,5 @@
+@import "../../../../theme/responsive.scss";
+
 :host {
   display: block;
   color: var(--color-light);
@@ -71,7 +73,7 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@mixin mobileView() {
   :host header .content {
     padding: 60px 8% 8% 8%;
     text-align: center;

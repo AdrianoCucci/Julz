@@ -1,3 +1,5 @@
+@import "../../../../theme/responsive.scss";
+
 :host {
   position: fixed;
   display: flex;
@@ -70,7 +72,7 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@include mobileView() {
   :host .content {
     height: auto;
     max-width: 90vw;

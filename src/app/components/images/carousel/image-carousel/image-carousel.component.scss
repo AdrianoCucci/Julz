@@ -1,3 +1,5 @@
+@import "../../../../../theme/responsive.scss";
+
 :host {
   position: relative;
   display: block;
@@ -57,7 +59,7 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@include mobileView() {
   :host {
     max-height: 80vh;
   }
