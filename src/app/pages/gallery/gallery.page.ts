@@ -74,12 +74,12 @@ export class GalleryPage extends Page {
             alt: "person-standing-with-phone",
           },
           {
-            src: "assets/images/photos/gallery/standing-with-phone-2.jpg",
-            alt: "person-standing-with-phone",
-          },
-          {
             src: "assets/images/photos/gallery/looking-away-1.jpg",
             alt: "person-looking-away",
+          },
+          {
+            src: "assets/images/photos/gallery/standing-with-phone-2.jpg",
+            alt: "person-standing-with-phone",
           }
         ]
       },
