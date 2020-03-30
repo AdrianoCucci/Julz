@@ -13,7 +13,8 @@
     "build:ssr": "ng build --prod && ng run julz:server:production",
     "serve:ssr": "node dist/julz/server/main.js",
     "build-serve:ssr": "npm run build:ssr && npm run serve:ssr",
-    "prerender": "ng run julz:prerender"
+    "prerender": "ng run julz:prerender",
+    "postinstall": "npm run build:ssr"
   },
   "private": true,
   "dependencies": {
