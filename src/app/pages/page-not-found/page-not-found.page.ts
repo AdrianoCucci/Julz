@@ -8,6 +8,7 @@ import { Page } from '../page';
   styleUrls: ['./page-not-found.page.scss']
 })
 export class PageNotFoundPage extends Page {
+
   public constructor(title: Title, meta: Meta) {
     super(title, meta);
     this._title.setTitle("Page Not Found");

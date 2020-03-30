@@ -2,7 +2,7 @@ import { Component, ViewChildren, QueryList, HostBinding } from '@angular/core';
 import { FormInput } from '../input/form-input';
 import { HttpClient } from '@angular/common/http';
 import { ContactForm } from 'src/app/interfaces/contact-form';
-import { ENVIRONMENT } from 'src/environments/environment';
+import { environment } from 'src/environments/environment';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faPaperPlane, faSyncAlt } from '@fortawesome/free-solid-svg-icons';
 
@@ -60,7 +60,7 @@ export class ContactFormComponent {
       this.submitBtnIcon = faSyncAlt;
 
       try {
-        const response: any = await this._httpClient.post(`${ENVIRONMENT.serverUrl}/sendmail`, this.contactForm).toPromise();
+        const response: any = await this._httpClient.post(`${environment.serverUrl}/sendmail`, this.contactForm).toPromise();
         console.log(response);
 
         if(response.error) {
