@@ -73,7 +73,7 @@
   }
 }
 
-@mixin mobileView() {
+@include mobileView() {
   :host header .content {
     padding: 60px 8% 8% 8%;
     text-align: center;

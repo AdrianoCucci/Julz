@@ -8,19 +8,15 @@
     height: 140vh;
   }
 
-  app-row {
-    app-column {
-      max-width: 1400px;
-
-      app-content-block {
-        font-size: 1.25rem;
-      }
-    }
+  app-content-block {
+    margin: auto;
+    font-size: 1.25rem;
+    max-width: 1000px;
   }
 }
 
 @include mobileView() {
-  :host app-row app-column app-content-block {
+  :host app-content-block {
     font-size: 1rem;
   }
 }
