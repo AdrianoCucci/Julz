@@ -1,11 +1,12 @@
 {
   "name": "julz",
   "version": "0.0.0",
+  "private": true,
   "scripts": {
     "ng": "ng",
     "build": "ng build --prod && ng run julz:server:production",
     "start": "node dist/julz/server/main.js",
-    "build-start": "npm run build:ssr && npm run serve:ssr",
+    "build-start": "npm run build && npm run start",
     "build-pages": "ng build --prod --output-path docs --base-href ./",
     "test": "ng test",
     "lint": "ng lint",
@@ -13,7 +14,6 @@
     "dev:ssr": "ng run julz:serve-ssr",
     "prerender": "ng run julz:prerender"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^9.0.7",
     "@angular/common": "^9.0.7",
