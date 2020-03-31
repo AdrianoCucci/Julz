@@ -15,19 +15,19 @@
       background-color: var(--color-secondary);
       box-shadow: var(--color-dark) 0.15vmax 0.15vmax 1px;
       border-radius: 50%;
+      transition: 0.25s;
 
       svg {
         width: 100%;
         height: 100%;
-        transition: 0.3s;
 
         * {
           fill: var(--color-tertiary);
         }
       }
 
-      &:hover svg {
-        transform: scale(1.2);
+      &:hover {
+        transform: scale(1.15);
       }
     }
   }
