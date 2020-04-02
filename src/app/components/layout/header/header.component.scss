@@ -17,6 +17,7 @@
     .content {
       display: flex;
       flex-flow: column;
+      width: inherit;
       padding: 280px 8% 8% 8%;
       letter-spacing: 4px;
       cursor: default;

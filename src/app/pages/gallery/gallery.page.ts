@@ -102,12 +102,12 @@ export class GalleryPage extends Page {
       {
         rowImages: [
           {
-            src: "assets/images/photos/gallery/posing-with-phone.jpg",
-            alt: "person-posing-with-phone",
-          },
-          {
             src: "assets/images/photos/gallery/talking-on-phone-2.jpg",
             alt: "person-talking-on-phone",
+          },
+          {
+            src: "assets/images/photos/gallery/posing-with-phone.jpg",
+            alt: "person-posing-with-phone",
           },
           {
             src: "assets/images/photos/gallery/standing-with-phone-1.jpg",
