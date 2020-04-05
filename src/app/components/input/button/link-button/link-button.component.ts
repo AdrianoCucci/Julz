@@ -7,5 +7,7 @@ import { ButtonComponent } from '../button.component';
   styleUrls: ['./link-button.component.scss']
 })
 export class LinkButtonComponent extends ButtonComponent {
+  @Input() public href: string;
   @Input() public routerLink: string;
+  @Input() public target: string;
 }

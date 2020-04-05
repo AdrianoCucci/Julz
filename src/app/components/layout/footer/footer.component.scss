@@ -1,3 +1,5 @@
+@import "../../../../theme/responsive.scss";
+
 :host {
   display: block;
 
@@ -9,5 +11,11 @@
     .inline-link {
       color: inherit;
     }
+  }
+}
+
+@include mobileView() {
+  :host footer app-row app-column {
+    margin: 10px 0;
   }
 }
