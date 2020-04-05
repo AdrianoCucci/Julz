@@ -47,42 +47,45 @@ export class ContactFormComponent {
     }
 
     if(formIsValid) {
-      this.sendMail();
+      // this.sendMail();
     }
   }
 
-  private async sendMail() {
-    if(!this._emailing) {
-      this._emailing = true;
-      this._emailSentResult = null;
-      this._sentSuccess = false;
-      this._sentFail = false;
-      this.submitBtnIcon = faSyncAlt;
+  /**
+   * UNUSED
+   */
+  // private async sendMail() {
+  //   if(!this._emailing) {
+  //     this._emailing = true;
+  //     this._emailSentResult = null;
+  //     this._sentSuccess = false;
+  //     this._sentFail = false;
+  //     this.submitBtnIcon = faSyncAlt;
 
-      try {
-        const response: any = await this._httpClient.post(`${environment.serverUrl}/sendmail`, this.contactForm).toPromise();
-        console.log(response);
+  //     try {
+  //       const response: any = await this._httpClient.post(`${environment.serverUrl}/sendmail`, this.contactForm).toPromise();
+  //       console.log(response);
 
-        if(response.error) {
-          throw response.error;
-        }
-        else {
-          this._emailSentResult = "Email sent successfully!";
-          this._sentSuccess = true;
-          this.contactForm.email = "";
-          this.contactForm.message = "";
-        }
-      }
-      catch(error) {
-        this._emailSentResult = "Sorry, something went wrong. Please try again later.";
-        this._sentFail = true;
-      }
-      finally {
-        this._emailing = false;
-        this.submitBtnIcon = faPaperPlane;
-      }
-    }
-  }
+  //       if(response.error) {
+  //         throw response.error;
+  //       }
+  //       else {
+  //         this._emailSentResult = "Email sent successfully!";
+  //         this._sentSuccess = true;
+  //         this.contactForm.email = "";
+  //         this.contactForm.message = "";
+  //       }
+  //     }
+  //     catch(error) {
+  //       this._emailSentResult = "Sorry, something went wrong. Please try again later.";
+  //       this._sentFail = true;
+  //     }
+  //     finally {
+  //       this._emailing = false;
+  //       this.submitBtnIcon = faPaperPlane;
+  //     }
+  //   }
+  // }
 
   public get emailing(): boolean {
     return this._emailing;
