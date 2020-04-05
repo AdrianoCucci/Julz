@@ -8,9 +8,14 @@
   background-color: var(--color-light-translucent);
   border-radius: 20px;
 
-  div ::ng-deep p {
-    line-height: 1.5;
-  }
+  div ::ng-deep {
+    p {
+      line-height: 1.5;
+    }
+    img {
+      max-width: 100%;
+    }
+  } 
 
   &[text-align="left"] {
     text-align: left;
