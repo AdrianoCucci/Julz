@@ -55,6 +55,16 @@ body {
   }
 }
 
+.inline-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-tertiary);
+
+  fa-icon {
+    margin-right: 10px;
+  }
+}
+
 .fixed-background-image {
   position: fixed;
   top: 0;

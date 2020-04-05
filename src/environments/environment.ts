@@ -12,7 +12,6 @@ import { PageNotFoundPage } from 'src/app/pages/page-not-found/page-not-found.pa
 
 export const environment = {
   production: false,
-  serverUrl: "http://localhost:3000",
   routes: [
     { path: "", redirectTo: "home", pathMatch: "full" },
     { path: "home", component: HomePage },

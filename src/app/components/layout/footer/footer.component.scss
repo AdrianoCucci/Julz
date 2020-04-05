@@ -1,32 +1,13 @@
 :host {
   display: block;
-  color: var(--color-secondary-shade);
 
-  footer {
-    width: 100%;
-    background-color: var(--color-dark-slight-translucent);
+  footer app-row {
+    padding: 20px;
+    color: var(--color-light);
+    background-color: var(--color-dark);
 
-    .julez-footer-text {
-      color: var(--color-light);
-      font-family: Anton, Arial, Helvetica, sans-serif;
-      font-size: 16vmax;
-      text-shadow: var(--color-dark) 1vmax 1vmax 1px;
-
-      .last-char {
-        display: inline-block;
-        transform: scaleX(-1);
-        text-shadow: var(--color-dark) -1vmax 1vmax 1px;
-      }
-    }
-
-    app-contact-form {
-      width: 100%;
-    }
-
-    .footer-end {
-      padding: 20px;
-      color: var(--color-light);
-      background-color: var(--color-dark);
+    .inline-link {
+      color: inherit;
     }
   }
 }
