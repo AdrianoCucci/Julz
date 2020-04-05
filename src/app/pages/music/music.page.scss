@@ -2,7 +2,10 @@
 
 :host {
   @include pageStyle();
-  background-color: var(--color-primary);
+
+  .fixed-background-image {
+    height: 140vmax;
+  }
 
   app-column {
     padding: 20px;
