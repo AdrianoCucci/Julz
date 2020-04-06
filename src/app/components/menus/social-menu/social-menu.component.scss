@@ -1,13 +1,18 @@
 :host {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  nav.social-menu {
+  nav.social-menu ul {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 
     a {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       max-width: 44px;
       max-height: 44px;
       padding: 10px;
@@ -16,6 +21,10 @@
       box-shadow: var(--color-dark) 0.15vmax 0.15vmax 1px;
       border-radius: 50%;
       transition: 0.25s;
+
+      fa-icon {
+        color: var(--color-tertiary);
+      }
 
       svg {
         width: 100%;
