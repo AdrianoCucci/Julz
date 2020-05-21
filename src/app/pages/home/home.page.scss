@@ -4,13 +4,17 @@
 :host {
   @include pageStyle();
 
-  .embed {
+  app-column div {
     width: 46%;
-    min-height: 560px;
-    margin: initial;
+    margin: 10px 0;
 
-    iframe {
-      width: 100%;
+    &.spotify-album {
+      min-height: 560px;
+      margin: initial;
+
+      iframe {
+        width: 100%;
+      }
     }
   }
 }
