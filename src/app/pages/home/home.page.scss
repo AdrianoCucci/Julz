@@ -20,7 +20,7 @@
 }
 
 @include mobileView() {
-  :host .embed {
+  :host .app-column div {
     width: 100%;
   }
 }
