@@ -3,7 +3,7 @@
   "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "julz": {
+    "jules": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/julz/browser",
+            "outputPath": "dist/jules/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "julz:build"
+            "browserTarget": "jules:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "julz:build:production"
+              "browserTarget": "jules:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "julz:build"
+            "browserTarget": "jules:build"
           }
         },
         "test": {
@@ -114,18 +114,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "julz:serve"
+            "devServerTarget": "jules:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "julz:serve:production"
+              "devServerTarget": "jules:serve:production"
             }
           }
         },
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/julz/server",
+            "outputPath": "dist/jules/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },
@@ -146,21 +146,21 @@
         "serve-ssr": {
           "builder": "@nguniversal/builders:ssr-dev-server",
           "options": {
-            "browserTarget": "julz:build",
-            "serverTarget": "julz:server"
+            "browserTarget": "jules:build",
+            "serverTarget": "jules:server"
           },
           "configurations": {
             "production": {
-              "browserTarget": "julz:build:production",
-              "serverTarget": "julz:server:production"
+              "browserTarget": "jules:build:production",
+              "serverTarget": "jules:server:production"
             }
           }
         },
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "browserTarget": "julz:build:production",
-            "serverTarget": "julz:server:production",
+            "browserTarget": "jules:build:production",
+            "serverTarget": "jules:server:production",
             "routes": [
               "/"
             ]
@@ -171,5 +171,5 @@
         }
       }
     }},
-  "defaultProject": "julz"
+  "defaultProject": "jules"
 }
