@@ -2,7 +2,7 @@ import { Component, ViewChildren, QueryList, HostBinding } from '@angular/core';
 import { FormInput } from '../input/form-input';
 import { HttpClient } from '@angular/common/http';
 import { ContactForm } from 'src/app/interfaces/contact-form';
-import { environment } from 'src/environments/environment';
+// import { environment } from 'src/environments/environment';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faPaperPlane, faSyncAlt } from '@fortawesome/free-solid-svg-icons';
 

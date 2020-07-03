@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Page } from '../page';
 import { Title, Meta } from '@angular/platform-browser';
-import { ImageContent } from 'src/app/interfaces/image-content';
 
 @Component({
   selector: 'app-home-page',
@@ -9,25 +8,8 @@ import { ImageContent } from 'src/app/interfaces/image-content';
   styleUrls: ['./home.page.scss']
 })
 export class HomePage extends Page {
-  public readonly carouselImages: ImageContent[];
-
   public constructor(title: Title, meta: Meta) {
     super(title, meta);
     this._title.setTitle("Jules");
-
-    this.carouselImages = [
-      {
-        src: "assets/images/placeholder.jpg",
-        alt: "placeholder-image"
-      },
-      {
-        src: "assets/images/placeholder.jpg",
-        alt: "placeholder-image"
-      },
-      {
-        src: "assets/images/placeholder.jpg",
-        alt: "placeholder-image"
-      }
-    ]
   }
 }
