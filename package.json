@@ -4,15 +4,15 @@
   "private": true,
   "scripts": {
     "ng": "ng",
-    "build": "ng build --prod && ng run julz:server:production",
-    "start": "node dist/julz/server/main.js",
+    "build": "ng build --prod && ng run jules:server:production",
+    "start": "node dist/jules/server/main.js",
     "build-start": "npm run build && npm run start",
     "build-pages": "ng build --prod --output-path docs --base-href ./",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev:ssr": "ng run julz:serve-ssr",
-    "prerender": "ng run julz:prerender"
+    "dev:ssr": "ng run jules:serve-ssr",
+    "prerender": "ng run jules:prerender"
   },
   "dependencies": {
     "@angular/animations": "^9.0.7",

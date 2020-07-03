@@ -9,12 +9,12 @@ import { PageNotFoundPage } from 'src/app/pages/page-not-found/page-not-found.pa
 export const environment = {
   production: true,
   routes: [
-    { path: "", redirectTo: "home", pathMatch: "full" },
-    { path: "home", component: HomePage },
+    { path: "", component: HomePage, pathMatch: "full" },
     { path: "music", component: MusicPage },
     { path: "about", component: AboutPage },
     { path: "videos", component: VideosPage },
     { path: "gallery", component: GalleryPage },
+    { path: "home", redirectTo: "" },
     { path: "**", component: PageNotFoundPage }
   ] as Routes
 };

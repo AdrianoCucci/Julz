@@ -12,18 +12,9 @@ import { environment } from 'src/environments/environment';
 // The Express app is exported so that it can be used by serverless Functions.
 export function app() {
   const server = express();
-  const distFolder = join(process.cwd(), 'dist/julz/browser');
+  const distFolder = join(process.cwd(), 'dist/jules/browser');
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
   
-  const validRoutes = [
-    "/",
-    "/home",
-    "/music",
-    "/about",
-    "/videos",
-    "/gallery"
-  ];
-
   // Our Universal express-engine (found @ https://github.com/angular/universal/tree/master/modules/express-engine)
   server.engine('html', ngExpressEngine({
     bootstrap: AppServerModule,
