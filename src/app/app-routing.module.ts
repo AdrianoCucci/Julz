@@ -8,12 +8,12 @@ import { GalleryPage } from './pages/gallery/gallery.page';
 import { PageNotFoundPage } from './pages/page-not-found/page-not-found.page';
 
 const routes: Routes = [
-  { path: "", redirectTo: "home", pathMatch: "full" },
-  { path: "home", component: HomePage },
+  { path: "", component: HomePage, pathMatch: "full" },
   { path: "music", component: MusicPage },
   { path: "about", component: AboutPage },
   { path: "videos", component: VideosPage },
   { path: "gallery", component: GalleryPage },
+  { path: "home", redirectTo: "" },
   { path: "**", component: PageNotFoundPage }
 ];
 

@@ -13,7 +13,7 @@ export class HomePage extends Page {
 
   public constructor(title: Title, meta: Meta) {
     super(title, meta);
-    this._title.setTitle("Home");
+    this._title.setTitle("Jules");
 
     this.carouselImages = [
       {
