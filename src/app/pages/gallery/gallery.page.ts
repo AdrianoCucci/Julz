@@ -10,15 +10,20 @@ import { ImageContent } from 'src/app/interfaces/image-content';
   styleUrls: ['./gallery.page.scss']
 })
 export class GalleryPage extends Page {
-  public readonly gallaryRows: GallaryRow[];
+  private _galleryRows: GallaryRow[];
 
   @ViewChild(ImageModalComponent, { static: true }) public imageModal: ImageModalComponent;
 
   public constructor(title: Title, meta: Meta) {
     super(title, meta);
+    
     this._title.setTitle("Gallery");
+    this.setMetaDescription("Check out these fun photos of Jules. With new music on the way, new images will be updated and added to this gallery.");
+    this.setGallaryImages();
+  }
 
-    this.gallaryRows = [
+  private setGallaryImages() {
+    this._galleryRows = [
       {
         rowImages: [
           {
@@ -116,6 +121,10 @@ export class GalleryPage extends Page {
         ]
       }
     ];
+  }
+
+  public get galleryRows(): GallaryRow[] {
+    return this._galleryRows;
   }
 }
 
