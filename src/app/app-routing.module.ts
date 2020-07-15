@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { environment } from 'src/environments/environment';
+import { ROUTES } from 'src/routes';
 
 @NgModule({
-  imports: [RouterModule.forRoot(environment.routes, {
+  imports: [RouterModule.forRoot(ROUTES, {
     initialNavigation: 'enabled'
   })],
   exports: [RouterModule]

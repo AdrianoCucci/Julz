@@ -7,7 +7,7 @@ import { join } from 'path';
 import { AppServerModule } from './src/main.server';
 import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
-import { environment } from 'src/environments/environment';
+import { ROUTES } from 'src/routes';
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app() {
@@ -33,7 +33,7 @@ export function app() {
   // All regular routes use the Universal engine
   server.get('*', (req, res) => {
     const route: string = req.path.replace('/', '');
-    const status: number = environment.routes.findIndex(r => r.path === route) === -1 ? 404 : 200;
+    const status: number = ROUTES.findIndex(r => r.path === route) === -1 ? 404 : 200;
     res.status(status).render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
   });
 
