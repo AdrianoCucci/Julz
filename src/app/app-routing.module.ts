@@ -1,24 +1,9 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { HomePage } from './pages/home/home.page';
-import { MusicPage } from './pages/music/music.page';
-import { AboutPage } from './pages/about/about.page';
-import { VideosPage } from './pages/videos/videos.page';
-import { GalleryPage } from './pages/gallery/gallery.page';
-import { PageNotFoundPage } from './pages/page-not-found/page-not-found.page';
-
-const routes: Routes = [
-  { path: "", component: HomePage, pathMatch: "full" },
-  { path: "music", component: MusicPage },
-  { path: "about", component: AboutPage },
-  { path: "videos", component: VideosPage },
-  { path: "gallery", component: GalleryPage },
-  { path: "home", redirectTo: "" },
-  { path: "**", component: PageNotFoundPage }
-];
+import { RouterModule } from '@angular/router';
+import { ROUTES } from 'src/routes';
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(ROUTES)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
