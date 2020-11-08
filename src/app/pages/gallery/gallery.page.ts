@@ -123,13 +123,45 @@ export class GalleryPage extends Page {
       {
         rowImages: [
           {
-            src: "assets/images/photos/gallery/sitting-with-glitter.jpeg",
-            alt: "person-sitting-with-glitter-background",
-          },
-          {
-            src: "assets/images/photos/gallery/standing-with-glitter.jpeg",
+            src: "assets/images/photos/gallery/standing-with-glitter-1.jpeg",
             alt: "person-standing-with-glitter-background",
           },
+          {
+            src: "assets/images/photos/gallery/standing-with-glitter-2.jpeg",
+            alt: "person-standing-with-glitter-background",
+          },
+          {
+            src: "assets/images/photos/gallery/standing-with-glitter-3.jpeg",
+            alt: "person-standing-with-glitter-background",
+          },
+        ]
+      },
+      {
+        rowImages: [
+          {
+            src: "assets/images/photos/gallery/standing-with-glitter-4.jpeg",
+            alt: "person-standing-with-glitter-background",
+          },
+          {
+            src: "assets/images/photos/gallery/standing-with-glitter-5.jpg",
+            alt: "person-standing-with-glitter-background",
+          },
+          {
+            src: "assets/images/photos/gallery/looking-in-mirror.jpg",
+            alt: "person-looking-in-mirror",
+          },
+        ]
+      },
+      {
+        rowImages: [
+          {
+            src: "assets/images/photos/gallery/sitting-1.jpg",
+            alt: "person-sitting",
+          },
+          {
+            src: "assets/images/photos/gallery/sitting-2.jpg",
+            alt: "person-sitting",
+          }
         ]
       }
     ];
