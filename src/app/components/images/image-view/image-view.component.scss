@@ -1,7 +1,11 @@
+@import "src/theme/responsive.scss";
+
 :host {
   position: relative;
   display: flex;
   min-width: 50px;
+  max-width: 90vw;
+  max-height: 75vh;
   border-radius: 20px;
   overflow: hidden;
   cursor: pointer;
@@ -12,7 +16,8 @@
     max-width: inherit;
     height: 100%;
     max-height: inherit;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: top center;
     pointer-events: none;
   }
 
@@ -39,6 +44,13 @@
     .hover-container {
       opacity: 1;
       transform: scale(1);
+    }
+  }
+
+  @include mobileView() {
+    img {
+      object-fit: contain;
+      background-color: var(--color-dark-translucent);
     }
   }
 }
