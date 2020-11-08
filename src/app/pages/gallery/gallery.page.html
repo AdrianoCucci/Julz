@@ -5,7 +5,7 @@
 <div class="gallery-container stripe-background">
     <app-row *ngFor="let row of galleryRows">
         <app-column *ngFor="let image of row.rowImages" h-align="center" v-align="center">
-            <app-image-view class="box-shadow-fade" [src]="image.src" [alt]="image.alt" [caption]="image.caption"
+            <app-image-view [src]="image.src" [alt]="image.alt" [caption]="image.caption"
                 [description]="image.description" (onClick)="imageModal.show($event)"></app-image-view>
         </app-column>
     </app-row>
