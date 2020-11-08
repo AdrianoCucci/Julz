@@ -119,6 +119,18 @@ export class GalleryPage extends Page {
             alt: "person-standing-with-phone",
           }
         ]
+      },
+      {
+        rowImages: [
+          {
+            src: "assets/images/photos/gallery/sitting-with-glitter.jpeg",
+            alt: "person-sitting-with-glitter-background",
+          },
+          {
+            src: "assets/images/photos/gallery/standing-with-glitter.jpeg",
+            alt: "person-standing-with-glitter-background",
+          },
+        ]
       }
     ];
   }
