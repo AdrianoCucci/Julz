@@ -1,5 +1,5 @@
 {
-  "name": "jules",
+  "name": "jules-profile",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -48,7 +48,7 @@
     "karma-jasmine-html-reporter": "^1.5.4",
     "protractor": "^7.0.0",
     "ts-node": "~8.3.0",
-    "tslint": "~5.18.0",
-    "typescript": "~3.7.5"
+    "tslint": "~6.1.0",
+    "typescript": "~3.8.3"
   }
 }
