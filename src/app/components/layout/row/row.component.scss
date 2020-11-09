@@ -8,6 +8,12 @@
     flex-flow: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: inherit;
+    max-width: inherit;
+    min-width: inherit;
+    height: inherit;
+    min-height: inherit;
+    max-height: inherit;
   }
 
   &[full-width] ::ng-deep app-column {
