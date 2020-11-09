@@ -22,6 +22,7 @@ import { TextAreaComponent } from './input/text-input/text-area/text-area.compon
 import { ButtonComponent } from './input/button/button.component';
 import { LinkButtonComponent } from './input/button/link-button/link-button.component';
 import { ContentBlockComponent } from './content-block/content-block.component';
+import { SpotifyEmbedListComponent } from './spotify-embed-list/spotify-embed-list.component';
 
 const components = [
   NavigationComponent,
@@ -41,7 +42,8 @@ const components = [
   TextAreaComponent,
   ButtonComponent,
   LinkButtonComponent,
-  ContentBlockComponent
+  ContentBlockComponent,
+  SpotifyEmbedListComponent
 ];
 
 @NgModule({

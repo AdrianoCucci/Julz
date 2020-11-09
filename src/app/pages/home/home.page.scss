@@ -8,19 +8,23 @@
     padding: 2% 5% 5% 5%;
 
     div {
+      display: flex;
+      flex-flow: column;
       width: 46%;
       margin: 10px 0;
 
-      &.spotify-list {
-        flex-flow: column;
-        margin: initial;
-
-        iframe {
-          width: 100%;
-          height: auto;
-        }
+      .spotify-follow-button {
+        width: 100%;
+        margin: 20px 0;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: var(--color-primary-translucent);
       }
     }
+  }
+
+  .spacer {
+    height: 26vh;
   }
 }
 

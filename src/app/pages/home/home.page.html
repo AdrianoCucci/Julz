@@ -6,17 +6,16 @@
 <app-row>
     <app-column>
         <div>
-            <iframe
-                src="https://open.spotify.com/follow/1/?uri=spotify:artist:5TwmCjBnk2N1wSpgfWxDHP&size=detail&theme=light"
-                width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;"
-                allowtransparency="true">
-            </iframe>
-        </div>
-        <div class="embed box-shadow-fade spotify-list">
-            <iframe src="https://open.spotify.com/embed/track/1WSvbMs1Q1JFLGsyvAmZDa" frameborder="0"
-                allowtransparency="true" allow="encrypted-media"></iframe>
-            <iframe src="https://open.spotify.com/embed/track/4PjA8d9XMZvyvlK4gf1amF" frameborder="0"
-                allowtransparency="true" allow="encrypted-media"></iframe>
+            <div class="spotify-follow-button box-shadow-fade">
+                <iframe
+                    src="https://open.spotify.com/follow/1/?uri=spotify:artist:5TwmCjBnk2N1wSpgfWxDHP&size=detail&theme=light"
+                    width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;"
+                    allowtransparency="true">
+                </iframe>
+            </div>
+            <app-spotify-embed-list class="box-shadow-fade"></app-spotify-embed-list>
         </div>
     </app-column>
 </app-row>
+
+<div class="spacer"></div>
