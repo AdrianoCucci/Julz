@@ -4,16 +4,21 @@
 :host {
   @include pageStyle();
 
-  app-column div {
-    width: 46%;
-    margin: 10px 0;
+  app-column {
+    padding: 2% 5% 5% 5%;
 
-    &.spotify-album {
-      min-height: 560px;
-      margin: initial;
+    div {
+      width: 46%;
+      margin: 10px 0;
 
-      iframe {
-        width: 100%;
+      &.spotify-list {
+        flex-flow: column;
+        margin: initial;
+
+        iframe {
+          width: 100%;
+          height: auto;
+        }
       }
     }
   }
