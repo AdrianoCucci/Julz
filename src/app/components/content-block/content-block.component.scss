@@ -1,0 +1,51 @@
+@import "../../../theme/responsive.scss";
+
+:host {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 100%;
+  background-color: var(--color-light-translucent);
+  border-radius: 20px;
+
+  div ::ng-deep {
+    p {
+      line-height: 1.5;
+    }
+    img {
+      max-width: 100%;
+    }
+  } 
+
+  &[text-align="left"] {
+    text-align: left;
+  }
+
+  &[text-align="center"] {
+    text-align: center;
+  }
+
+  &[text-align="right"] {
+    text-align: right;
+  }
+}
+
+@include mobileView() {
+  :host {
+    .heading {
+      text-align: center;
+    }
+
+    &[text-align-mobile="left"] {
+      text-align: left;
+    }
+
+    &[text-align-mobile="center"] {
+      text-align: center;
+    }
+
+    &[text-align-mobile="right"] {
+      text-align: right;
+    }
+  }
+}

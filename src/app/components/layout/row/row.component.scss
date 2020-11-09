@@ -1,0 +1,28 @@
+@import "../../../../theme/responsive.scss";
+
+:host {
+  display: block;
+
+  section {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  &[full-width] ::ng-deep app-column {
+    width: 100%;
+  }
+}
+
+@include mobileView() {
+  :host {
+    section {
+      flex-flow: column;
+    }
+
+    &[mobile-col-reverse] section {
+      flex-flow: column-reverse;
+    }
+  }
+}

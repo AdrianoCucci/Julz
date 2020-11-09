@@ -1,0 +1,31 @@
+@import "../../../theme/responsive.scss";
+@import "../page.scss";
+
+:host {
+  @include pageStyle();
+
+  app-column {
+    padding: 2% 5% 5% 5%;
+
+    div {
+      width: 46%;
+      margin: 10px 0;
+
+      &.spotify-list {
+        flex-flow: column;
+        margin: initial;
+
+        iframe {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@include mobileView() {
+  :host app-column div {
+    width: 100%;
+  }
+}

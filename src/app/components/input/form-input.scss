@@ -1,0 +1,49 @@
+@import "./input.scss";
+
+@mixin formInputStyle() {
+  @include inputStyle();
+
+  label {
+    display: inline-block;
+    margin-left: 12px;
+    margin-bottom: 8px;
+    color: var(--color-medium);
+    font-size: 1.3rem;
+    transform: translateY(41px) scale(0.8);
+    transform-origin: left;
+    transition: 0.25s;
+
+    input,
+    textarea {
+      display: block;
+    }
+  }
+
+  &.raised-label label {
+    color: var(--color-secondary);
+    transform: translateY(0) scale(1);
+  }
+
+  .error {
+    position: absolute;
+    display: inline-block;
+    top: 1px;
+    right: 6%;
+    max-width: 88%;
+    max-height: 30px;
+    padding: 6px 10px;
+    color: var(--color-light);
+    background-color: var(--color-danger);
+    border-radius: 10px 10px 0 0;
+    line-height: 1.5;
+    opacity: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: 0.15s;
+  }
+
+  &.invalid .error {
+    opacity: 1;
+  }
+}

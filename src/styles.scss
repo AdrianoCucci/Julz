@@ -1,1 +1,114 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./theme/variables.scss";
+@import "./theme/fonts.scss";
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.logo-container {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 10px;
+
+  img {
+    max-width: inherit;
+    max-height: inherit;
+  }
+}
+
+.padding {
+  padding: 8% 6%;
+}
+
+.box-shadow-fade {
+  box-shadow: var(--color-dark-translucent) 1vmin 1vmin 1px;
+}
+
+.heading {
+  display: block;
+  margin: 20px 0;
+  color: var(--color-tertiary);
+  font-weight: bold;
+  font-size: 2rem;
+  text-shadow: var(--color-dark-translucent) 3px 3px 1px;
+}
+
+.block-quote {
+  font-style: italic;
+  padding: 10px 0 10px 20px;
+  color: var(--color-secondary);
+  border-left: solid var(--color-secondary) 4px;
+
+  .reference {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+}
+
+.inline-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-tertiary);
+
+  fa-icon {
+    margin-right: 10px;
+  }
+}
+
+.fixed-background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.stripe-background {
+  background: linear-gradient(
+    45deg,
+    var(--color-secondary-tint) 15%,
+    var(--color-secondary) 15%,
+    var(--color-secondary) 50%,
+    var(--color-secondary-tint) 50%
+  );
+}
+
+.stripe-background-r {
+  background: linear-gradient(
+    -45deg,
+    var(--color-secondary) 15%,
+    var(--color-secondary-tint) 15%,
+    var(--color-secondary-tint) 50%,
+    var(--color-secondary) 50%
+  );
+}
+
+.embed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+
+  iframe {
+    width: inherit;
+    min-width: inherit;
+    max-width: inherit;
+    height: inherit;
+    min-height: inherit;
+    max-height: inherit;
+  }
+}

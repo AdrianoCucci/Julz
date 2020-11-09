@@ -1,0 +1,10 @@
+@import "../page.scss";
+
+:host {
+  @include pageStyle();
+
+  .embed {
+    width: 100%;
+    height: 45vmax;
+  }
+}

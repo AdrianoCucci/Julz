@@ -1,0 +1,41 @@
+:host {
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+
+  &[size="xs"] {
+    flex: 0.25;
+  }
+
+  &[size="s"] {
+    flex: 0.5;
+  }
+
+  &[size="l"] {
+    flex: 1.5;
+  }
+
+  &[size="xl"] {
+    flex: 2;
+  }
+
+  &[size="xxl"] {
+    flex: 2.5;
+  }
+
+  &[h-align="center"] {
+    align-items: center;
+  }
+
+  &[h-align="right"] {
+    align-items: flex-end;
+  }
+
+  &[v-align="center"] {
+    justify-content: center;
+  }
+
+  &[v-align="bottom"] {
+    justify-content: flex-end;
+  }
+}

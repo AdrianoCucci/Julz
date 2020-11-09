@@ -1,0 +1,11 @@
+@import "../../form-input.scss";
+
+
+:host {
+  @include formInputStyle();
+
+  textarea {
+    min-height: 200px;
+    resize: none;
+  }
+}

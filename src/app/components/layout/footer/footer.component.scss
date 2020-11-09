@@ -1,0 +1,40 @@
+@import "../../../../theme/responsive.scss";
+
+:host {
+  display: block;
+
+  footer {
+    color: var(--color-light);
+    background-color: var(--color-dark-slight-translucent);
+
+    app-row {
+      .julez-footer-text {
+        color: inherit;
+        font-family: Anton, Arial, Helvetica, sans-serif;
+        font-size: 6vmax;
+        text-shadow: var(--color-dark) 0.5vmax 0.5vmax 1px;
+
+        .last-char {
+          display: inline-block;
+          transform: scaleX(-1);
+          text-shadow: var(--color-dark) -0.5vmax 0.5vmax 1px;
+        }
+      }
+
+      .inline-link {
+        color: inherit;
+      }
+      
+      &.footer-end {
+        padding: 20px;
+        background-color: var(--color-dark);
+      }
+    }
+  }
+}
+
+@include mobileView() {
+  :host footer app-row:not(.footer-end) app-column {
+    margin: 10px 0;
+  }
+}

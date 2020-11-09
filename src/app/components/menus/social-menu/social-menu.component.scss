@@ -1,0 +1,43 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  nav.social-menu ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 44px;
+      max-height: 44px;
+      padding: 10px;
+      margin: 10px;
+      background-color: var(--color-secondary);
+      box-shadow: var(--color-dark) 0.15vmax 0.15vmax 1px;
+      border-radius: 50%;
+      transition: 0.25s;
+
+      fa-icon {
+        color: var(--color-tertiary);
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+
+        * {
+          fill: var(--color-tertiary);
+        }
+      }
+
+      &:hover {
+        transform: scale(1.15);
+      }
+    }
+  }
+}

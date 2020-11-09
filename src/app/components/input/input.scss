@@ -1,0 +1,95 @@
+@mixin inputStyle() {
+  position: relative;
+  display: inline-block;
+  margin: 10px 0;
+  overflow: hidden;
+
+  input,
+  textarea,
+  button,
+  a.link-button {
+    display: inherit;
+    width: 100%;
+    min-width: inherit;
+    height: inherit;
+    min-height: inherit;
+    padding: 10px;
+    border: solid transparent 2px;
+    border-radius: inherit;
+    outline: none;
+    font-family: inherit;
+    transition: 0.25s;
+  }
+
+  input,
+  textarea {
+    color: var(--color-secondary-contrast);
+    background-color: var(--color-secondary);
+    cursor: text;
+
+    &:hover {
+      box-shadow: inset var(--color-secondary-contrast) 0 0 5px;
+    }
+
+    &:active {
+      background-color: var(--color-secondary-tint);
+    }
+  }
+
+  button,
+  a.link-button {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    color: var(--color-primary-shade);
+    background-color: var(--color-tertiary);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: inset var(--color-secondary) 0 0 5px;
+    }
+
+    &:active {
+      background-color: var(--color-tertiary-tint);
+    }
+
+    &:disabled {
+      filter: contrast(0.5);
+      pointer-events: none;
+    }
+
+    ::ng-deep {
+      span,
+      fa-icon {
+        margin: 0 4px;
+      }
+    }
+  }
+
+  &.block {
+    width: 100%;
+  }
+
+  &.rounded {
+    border-radius: 20px;
+  }
+
+  &.outlined {
+    input,
+    textarea,
+    button,
+    a.link-button {
+      background: none;
+      border: solid var(--color-secondary) 2px;
+    }
+
+    input,
+    textarea {
+      &:hover {
+        box-shadow: inset var(--color-secondary) 0 0 5px;
+      }
+    }
+  }
+}

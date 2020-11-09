@@ -1,0 +1,13 @@
+@import "../page.scss";
+
+:host {
+  @include pageStyle();
+
+  .gallery-container {
+    padding: 8% 6%;
+  }
+
+  app-image-view {
+    margin: 10px;
+  }
+}

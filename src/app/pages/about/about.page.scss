@@ -1,0 +1,22 @@
+@import "../../../theme/responsive.scss";
+@import "../page.scss";
+
+:host {
+  @include pageStyle();
+
+  .fixed-background-image {
+    height: 150vh;
+  }
+
+  app-content-block {
+    margin: auto;
+    font-size: 1.25rem;
+    max-width: 1000px;
+  }
+}
+
+@include mobileView() {
+  :host app-content-block {
+    font-size: 1rem;
+  }
+}

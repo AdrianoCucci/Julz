@@ -1,0 +1,23 @@
+@import "../page.scss";
+
+:host {
+  @include pageStyle();
+
+  app-column {
+    min-height: 100vh;
+
+    h1 {
+      font-size: 16vmax;
+      text-shadow: var(--color-dark-translucent) 1vmin 1vmin 1px;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 4vmax;
+    }
+
+    app-link-button {
+      font-size: 2vmax;
+    }
+  }
+}
