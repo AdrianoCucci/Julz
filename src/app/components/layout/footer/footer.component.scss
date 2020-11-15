@@ -22,9 +22,14 @@
       }
 
       .inline-link {
-        color: inherit;
+        padding: 10px 15px;
+        background-color: var(--color-light);
+        color: var(--color-light-contrast);
+        border-radius: 100px;
+        font-weight: bold;
+        text-decoration: none;
       }
-      
+
       &.footer-end {
         padding: 20px;
         background-color: var(--color-dark);
