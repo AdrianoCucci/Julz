@@ -1,5 +1,6 @@
 @import "./theme/variables.scss";
 @import "./theme/fonts.scss";
+@import "./theme/responsive.scss";
 
 body {
   margin: 0;
@@ -120,5 +121,23 @@ body {
     height: inherit;
     min-height: inherit;
     max-height: inherit;
+  }
+}
+
+.hover-grow {
+  transition: 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  &:hover {
+    transform: scale(1.04);
+  }
+}
+
+@include mobileView() {
+  .hover-grow {
+    transition: unset;
+
+    &:hover {
+      transform: unset;
+    }
   }
 }

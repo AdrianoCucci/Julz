@@ -20,7 +20,7 @@
       background-color: var(--color-secondary);
       box-shadow: var(--color-dark) 0.15vmax 0.15vmax 1px;
       border-radius: 50%;
-      transition: 0.25s;
+      transition: 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
 
       fa-icon {
         color: var(--color-tertiary);
