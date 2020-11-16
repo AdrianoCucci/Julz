@@ -28,6 +28,10 @@
         padding: 15px 20px;
         transition: 0.5s;
 
+        fa-icon {
+          margin-right: 6px;
+        }
+
         span {
           padding-top: 1px;
           transition: 0.1s;
@@ -59,6 +63,18 @@
           background-color: var(--color-secondary);
           box-shadow: var(--color-dark) 0.15vmax 0.15vmax 1px;
         }
+
+        &.store-link {
+          margin-left: 6px;
+          background-color: var(--color-secondary-shade);
+          border: solid var(--color-tertiary);
+          border-radius: 10px;
+
+          &:hover {
+            color: var(--color-secondary);
+            background-color: var(--color-tertiary);
+          }
+        }
       }
     }
   }
@@ -83,6 +99,10 @@
           &::after {
             display: none;
           }
+        }
+
+        &.store-link {
+          margin: unset;
         }
       }
     }
